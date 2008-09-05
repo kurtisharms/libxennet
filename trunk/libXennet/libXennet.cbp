@@ -34,11 +34,15 @@
 				</Linker>
 			</Target>
 		</Build>
+		<Unit filename="src/linux/xenPacket.cpp" />
+		<Unit filename="src/linux/xenPacket.h" />
+		<Unit filename="src/linux/xenSocketAddress.cpp" />
+		<Unit filename="src/linux/xenSocketAddress.h" />
 		<Unit filename="src/xenInfo.cpp" />
 		<Unit filename="src/xenInfo.hpp" />
 		<Unit filename="src/xenMain.hpp" />
-		<Unit filename="src/xenSocketAddress.cpp" />
-		<Unit filename="src/xenSocketAddress.hpp" />
+		<Unit filename="src/xenPacketBase.hpp" />
+		<Unit filename="src/xenSocketAddressBase.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
