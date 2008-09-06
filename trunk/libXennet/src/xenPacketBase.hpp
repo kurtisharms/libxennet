@@ -11,6 +11,8 @@ namespace Xennet
     public:
         /** Default constructor */
         PacketBase() {}
+        PacketBase(std::string data) {}
+        PacketBase(char* data) {}
         /** Default destructor */
         virtual ~PacketBase() {}
         virtual bool setData(std::string str)= 0;
@@ -18,8 +20,7 @@ namespace Xennet
         virtual bool setData(char* data) = 0;
         virtual char* getCharData() = 0;
     protected:
-        std::string strBuf;
-        char* charBuf;
+        std::string strBuffer;
     private:
     };
 
