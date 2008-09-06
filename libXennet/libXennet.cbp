@@ -36,6 +36,8 @@
 		</Build>
 		<Unit filename="src/linux/xenPacket.cpp" />
 		<Unit filename="src/linux/xenPacket.h" />
+		<Unit filename="src/linux/xenSocket.cpp" />
+		<Unit filename="src/linux/xenSocket.hpp" />
 		<Unit filename="src/linux/xenSocketAddress.cpp" />
 		<Unit filename="src/linux/xenSocketAddress.h" />
 		<Unit filename="src/xenInfo.cpp" />
@@ -43,6 +45,8 @@
 		<Unit filename="src/xenMain.hpp" />
 		<Unit filename="src/xenPacketBase.hpp" />
 		<Unit filename="src/xenSocketAddressBase.hpp" />
+		<Unit filename="src/xenSocketBase.cpp" />
+		<Unit filename="src/xenSocketBase.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

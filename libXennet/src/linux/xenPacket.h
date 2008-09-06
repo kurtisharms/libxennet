@@ -13,6 +13,8 @@ namespace Xennet
     public:
         /** Default constructor */
         Packet();
+        Packet(std::string data);
+        Packet(char* data);
         /** Default destructor */
         virtual ~Packet();
         bool setData(std::string str);
