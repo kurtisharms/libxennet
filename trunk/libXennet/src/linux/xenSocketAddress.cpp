@@ -22,6 +22,11 @@ namespace Xennet
 
     }
 
+    bool SocketAddress::setIPAddress(std::string ip)
+    {
+        return setIPAddress(ip.c_str());
+    }
+
     bool SocketAddress::setHostName(const char* name)
     {
         hostInfo = gethostbyname(name);
