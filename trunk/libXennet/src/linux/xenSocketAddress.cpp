@@ -16,21 +16,21 @@ namespace Xennet
 
     bool SocketAddress::setIPAddress(const char* cp)
     {
-        inet_aton("66.94.230.32", &addr);
-        he = gethostbyaddr(&addr, sizeof addr, AF_INET);
+        inet_aton(cp, &addr);
+        hostInfo = gethostbyaddr(&addr, sizeof addr, AF_INET);
         return isAddressNull();
 
     }
 
     bool SocketAddress::setHostName(const char* name)
     {
-        he = gethostbyname(name);
+        hostInfo = gethostbyname(name);
         return isAddressNull();
     }
 
     bool SocketAddress::isAddressNull(void)
     {
-        if (he == NULL)
+        if (hostInfo == NULL)
         {
             return false;
         }
@@ -42,9 +42,9 @@ namespace Xennet
 
     char* SocketAddress::getAddressName(void)
     {
-        if (he != NULL)
+        if (hostInfo != NULL)
         {
-            return he->h_name;
+            return hostInfo->h_name;
         }
         else
         {
@@ -54,9 +54,9 @@ namespace Xennet
 
     char* SocketAddress::getAddressIP(void)
     {
-        if (he != NULL)
+        if (hostInfo != NULL)
         {
-            return inet_ntoa(*(struct in_addr*)he->h_addr);
+            return inet_ntoa(*(struct in_addr*)hostInfo->h_addr);
         }
         else
         {
@@ -64,10 +64,10 @@ namespace Xennet
         }
     }
 
-    hostent* SocketAddress::getAddressStruct(void)
+    /*hostent* SocketAddress::getAddressStruct(void)
     {
-        return he;
-    }
+        return hostInfo;
+    }*/
 
 } // namespace Xennet
 

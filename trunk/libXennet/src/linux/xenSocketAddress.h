@@ -11,7 +11,7 @@ namespace Xennet
     class SocketAddress : public SocketAddressBase
     {
     public:
-        struct hostent *he;
+
         /** Default constructor */
         SocketAddress();
         /** Default destructor */
@@ -21,11 +21,10 @@ namespace Xennet
         bool isAddressNull(void);
         char* getAddressName(void);
         char* getAddressIP(void);
-        hostent* getAddressStruct(void);
-
+        //hostent* getAddressStruct(void);
     protected:
-    private:
         int i;
+        struct hostent *hostInfo;
         struct in_addr **addr_list;
         struct in_addr addr;
     };
