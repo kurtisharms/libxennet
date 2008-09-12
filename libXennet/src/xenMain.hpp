@@ -4,11 +4,14 @@
 
 #ifdef linux
 #define LINUX_OS
+#endif
+
+#ifdef LINUX_OS
 #include <netdb.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <unistd.h>
-#endif // linux
+#endif // LINUX_OS
 
 #include <iostream>
 #include <fstream>
@@ -18,5 +21,6 @@
 #include <list>
 
 #define XENNET_LIB_VERSION "0.0.1"
+#define DEFAULT_MAX_DATA_SIZE 1000
 
 #endif // XENMAIN_HPP_INCLUDED
