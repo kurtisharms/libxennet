@@ -25,6 +25,8 @@ namespace Xennet
         bool setCallBack(void (*func)(Packet*));
         bool sendData(Packet* data);
         bool sendData(std::string data);
+        Packet* readData();
+        std::string readDataAsString();
     protected:
         bool Error;
     private:

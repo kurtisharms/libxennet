@@ -120,6 +120,25 @@ namespace Xennet
         return false;
     }
 
+    std::string Socket::readDataAsString()
+    {
+        char charBuffer[getMaxDataSize()];
+        memset(charBuffer, 0x0, getMaxDataSize()+1);
+        if (recv(socketDescriptor, charBuffer, getMaxDataSize(), 0) < 0) {
+            Error = true;
+            close(socketDescriptor);
+        }
+        std::string tmpStr = charBuffer;
+        return tmpStr;
+    }
+
+    Packet* Socket::readData()
+    {
+        std::string tmpStr = readDataAsString();
+        Packet* pack = new Packet(tmpStr);
+        return pack;
+    }
+
 } // namespace Xennet
 
 #endif // LINUX_OS

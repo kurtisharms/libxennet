@@ -5,22 +5,22 @@
 		<Cursor position="268" topLine="0" />
 	</File>
 	<File name="src/linux/xenPacket.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="347" topLine="30" />
+		<Cursor position="347" topLine="6" />
 	</File>
 	<File name="src/linux/xenPacket.h" open="0" top="0" tabpos="3">
 		<Cursor position="518" topLine="9" />
 	</File>
-	<File name="src/linux/xenSocket.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="2235" topLine="78" />
+	<File name="src/linux/xenSocket.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="3400" topLine="0" />
 	</File>
-	<File name="src/linux/xenSocket.hpp" open="1" top="0" tabpos="4">
-		<Cursor position="505" topLine="21" />
+	<File name="src/linux/xenSocket.hpp" open="1" top="1" tabpos="3">
+		<Cursor position="477" topLine="15" />
 	</File>
-	<File name="src/linux/xenSocketAddress.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="1107" topLine="52" />
+	<File name="src/linux/xenSocketAddress.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="1005" topLine="51" />
 	</File>
-	<File name="src/linux/xenSocketAddress.h" open="1" top="0" tabpos="2">
-		<Cursor position="355" topLine="15" />
+	<File name="src/linux/xenSocketAddress.h" open="0" top="0" tabpos="2">
+		<Cursor position="406" topLine="15" />
 	</File>
 	<File name="src/xenInfo.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="80" topLine="0" />
@@ -29,7 +29,7 @@
 		<Cursor position="40" topLine="0" />
 	</File>
 	<File name="src/xenMain.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="85" topLine="0" />
+		<Cursor position="412" topLine="5" />
 	</File>
 	<File name="src/xenPacketBase.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="537" topLine="9" />
@@ -38,9 +38,9 @@
 		<Cursor position="291" topLine="5" />
 	</File>
 	<File name="src/xenSocketBase.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="177" topLine="6" />
+		<Cursor position="127" topLine="0" />
 	</File>
 	<File name="src/xenSocketBase.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="251" topLine="5" />
+		<Cursor position="155" topLine="27" />
 	</File>
 </CodeBlocks_layout_file>

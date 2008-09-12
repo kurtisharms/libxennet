@@ -5,7 +5,7 @@ namespace Xennet
 
     SocketBase::SocketBase()
     {
-        setMaxDataSize(100);
+        setMaxDataSize(DEFAULT_MAX_DATA_SIZE);
     }
 
     SocketBase::~SocketBase()

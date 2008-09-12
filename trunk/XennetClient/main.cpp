@@ -17,5 +17,6 @@ int main()
     //Packet* pa = new Packet("hi there");
     //cout << pa->getData() <<endl;
     sock->sendData("hi there");
+    cout << "From Server: " << sock->readDataAsString() <<endl;
     return 0;
 }

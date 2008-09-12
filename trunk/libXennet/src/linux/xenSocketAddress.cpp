@@ -53,7 +53,7 @@ namespace Xennet
         }
         else
         {
-            return "";
+            return 0;
         }
     }
 
@@ -65,7 +65,7 @@ namespace Xennet
         }
         else
         {
-            return "";
+            return 0;
         }
     }
 
