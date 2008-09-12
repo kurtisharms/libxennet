@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1221035197 source:/home/kurtis/Programming/Projects/Xennet/XennetClient/main.cpp
+	<iostream>
+	"Xennet.hpp"
+
+1221001614 /home/kurtis/Programming/Projects/Xennet/libXennet/src/Xennet.hpp
+	"xenMain.hpp"
+	"xenInfo.hpp"
+	"xenPacketBase.hpp"
+	"xenSocketAddressBase.hpp"
+	"xenSocketBase.hpp"
+	"linux/xenPacket.h"
+	"linux/xenSocket.hpp"
+	"linux/xenSocketAddress.h"
+
+1220614107 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenMain.hpp
+	<netdb.h>
+	<arpa/inet.h>
+	<netinet/in.h>
+	<unistd.h>
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<cstdio>
+	<string>
+	<list>
+
+1220611924 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenInfo.hpp
+	"xenMain.hpp"
+
+1220705940 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp
+	"xenMain.hpp"
+
+1220614311 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp
+	"xenMain.hpp"
+
+1221034111 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp
+	"xenMain.hpp"
+
+1220705940 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenPacket.h
+	"../xenMain.hpp"
+	"../xenPacketBase.hpp"
+
+1221034193 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocket.hpp
+	"../xenMain.hpp"
+	"xenSocketAddress.h"
+	"xenPacket.h"
+	"../xenSocketBase.hpp"
+
+1221033926 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.h
+	"../xenMain.hpp"
+	"../xenSocketAddressBase.hpp"
+
