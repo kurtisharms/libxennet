@@ -12,7 +12,7 @@ int main()
     cout << "\nEnter the port number: ";
     cin >> port;
     Socket* sock = new Socket(port);
-    sock->setIPAddress(host.c_str());
+    sock->setIPAddress(host);
     sock->connectSocket();
     //Packet* pa = new Packet("hi there");
     //cout << pa->getData() <<endl;

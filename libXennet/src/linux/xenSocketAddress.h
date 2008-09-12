@@ -17,6 +17,7 @@ namespace Xennet
         /** Default destructor */
         virtual ~SocketAddress();
         bool setIPAddress(const char* cp);
+        bool setIPAddress(std::string ip);
         bool setHostName(const char* name);
         bool isAddressNull(void);
         char* getAddressName(void);
