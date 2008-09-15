@@ -46,12 +46,30 @@
 	"win32/xenPacket.h"
 	"mac/xenPacket.h"
 
-1221213797 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocket.cpp
+1221470645 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocket.cpp
 	"xenSocket.hpp"
 
-1221213083 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocket.hpp
+1221473694 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocket.hpp
 	"../xenMain.hpp"
 	"xenSocketAddress.h"
 	"xenPacket.h"
 	"../xenSocketBase.hpp"
+
+1221470645 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.cpp
+	"xenServerSocketBase.hpp"
+
+1221470696 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.hpp
+	"xenMain.hpp"
+	"linux/xenPacket.h"
+	"win32/xenPacket.h"
+	"mac/xenPacket.h"
+
+1221474261 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenServerSocket.cpp
+	"xenServerSocket.hpp"
+
+1221474279 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenServerSocket.hpp
+	"../xenMain.hpp"
+	"xenSocketAddress.h"
+	"xenPacket.h"
+	"../xenServerSocketBase.hpp"
 
