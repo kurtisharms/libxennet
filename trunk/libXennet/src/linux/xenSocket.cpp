@@ -124,7 +124,8 @@ namespace Xennet
     {
         char charBuffer[getMaxDataSize()];
         memset(charBuffer, 0x0, getMaxDataSize()+1);
-        if (recv(socketDescriptor, charBuffer, getMaxDataSize(), 0) < 0) {
+        if (recv(socketDescriptor, charBuffer, getMaxDataSize(), 0) < 0)
+        {
             Error = true;
             close(socketDescriptor);
         }

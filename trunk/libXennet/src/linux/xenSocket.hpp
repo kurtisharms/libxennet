@@ -29,7 +29,6 @@ namespace Xennet
         std::string readDataAsString();
     protected:
         bool Error;
-    private:
         unsigned short int serverPort;
         int socketDescriptor;
         struct sockaddr_in serverAddress;
