@@ -7,7 +7,7 @@ namespace Xennet
 
     ServerSocket::ServerSocket()
     {
-        //ctor
+        memset(line, 0x0, getMaxDataSize()+1);
     }
 
     ServerSocket::ServerSocket(int port, int maxClients)
@@ -33,6 +33,8 @@ namespace Xennet
         {
             maxConnections = 1;
         }
+
+        memset(line, 0x0, getMaxDataSize()+1);
     }
 
     ServerSocket::~ServerSocket()
@@ -73,7 +75,7 @@ namespace Xennet
         return true;
     }
 
-    bool ServerSocket::acceptConnection(void)
+    bool ServerSocket::acceptConnections(void)
     {
         clientAddressLength = sizeof(clientAddress);
         connectSocket = accept(listenSocket,
@@ -85,6 +87,26 @@ namespace Xennet
             return false;
         }
         return true;
+    }
+
+    bool ServerSocket::receiveData(Packet* data)
+    {
+        if(recv(connectSocket, line, getMaxDataSize(), 0) > 0)
+        {
+            std::string tmpStr = line;
+            data->setData(tmpStr);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    bool ServerSocketreceiveDataAsString(std::string* strData)
+    {
+        // Dummy function
+        return false;
     }
 
      bool ServerSocket::sendData(Packet* data)
