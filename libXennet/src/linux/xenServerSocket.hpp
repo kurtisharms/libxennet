@@ -23,7 +23,9 @@ namespace Xennet
         bool isError(void);
         bool resetError(void);
         bool bindSocket(void);
-        bool acceptConnection(void);
+        bool acceptConnections(void);
+        bool receiveData(Packet* data);
+        bool receiveDataAsString(std::string* strData);
         bool sendData(Packet* data);
         bool sendData(std::string data);
     protected:
@@ -33,6 +35,7 @@ namespace Xennet
         unsigned short int listenPort;
         socklen_t clientAddressLength;
         struct sockaddr_in clientAddress, serverAddress;
+        char line[DEFAULT_MAX_DATA_SIZE+1];
     };
 
 } // namespace Xennet
