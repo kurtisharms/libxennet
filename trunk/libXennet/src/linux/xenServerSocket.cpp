@@ -7,11 +7,13 @@ namespace Xennet
 
     ServerSocket::ServerSocket()
     {
-        memset(line, 0x0, getMaxDataSize()+1);
+        NET_EOD = "NET_EOD_SINGLE_1";
     }
 
     ServerSocket::ServerSocket(int port, int maxClients)
     {
+        NET_EOD = "NET_EOD_SINGLE_1";
+
         Error = false;
 
         if (port > 0)
@@ -33,8 +35,6 @@ namespace Xennet
         {
             maxConnections = 1;
         }
-
-        memset(line, 0x0, getMaxDataSize()+1);
     }
 
     ServerSocket::~ServerSocket()
@@ -89,27 +89,31 @@ namespace Xennet
         return true;
     }
 
-    bool ServerSocket::receiveData(Packet* data)
+    Packet* ServerSocket::receiveData(void)
     {
-        if(recv(connectSocket, line, getMaxDataSize(), 0) > 0)
+//dummy function
+        return 0;
+    }
+
+    std::string ServerSocket::receiveDataAsString(void)
+    {
+        char charBuffer[getMaxDataSize()];
+        memset(charBuffer, 0x0, getMaxDataSize()+1);
+        std::cout << "Receive DATA" <<std::endl;
+        if (recv(connectSocket, charBuffer, strlen(charBuffer) + 1, 0) > 0)
         {
-            std::string tmpStr = line;
-            data->setData(tmpStr);
-            return true;
+
+            std::string strData = charBuffer;
+            std::cout << "Returning with data set as: " << charBuffer <<std::endl;
+            return strData;
         }
         else
         {
-            return false;
+            return NET_EOD;
         }
     }
 
-    bool ServerSocketreceiveDataAsString(std::string* strData)
-    {
-        // Dummy function
-        return false;
-    }
-
-     bool ServerSocket::sendData(Packet* data)
+    bool ServerSocket::sendData(Packet* data)
     {
         //std::cout << "In Socket::sendData(Packet* data)" <<std::endl;
         //std::cout << "Create charBuffer with getMaxDataSize()" <<std::endl;
@@ -129,8 +133,7 @@ namespace Xennet
     bool ServerSocket::sendData(std::string data)
     {
         Packet *p = new Packet(data);
-        sendData(p);
-        return false;
+        return sendData(p);
     }
 
 } // namespace Xennet

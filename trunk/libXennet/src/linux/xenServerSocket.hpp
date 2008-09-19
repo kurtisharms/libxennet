@@ -24,10 +24,12 @@ namespace Xennet
         bool resetError(void);
         bool bindSocket(void);
         bool acceptConnections(void);
-        bool receiveData(Packet* data);
-        bool receiveDataAsString(std::string* strData);
+        Packet* receiveData(void);
+        std::string receiveDataAsString(void);
         bool sendData(Packet* data);
         bool sendData(std::string data);
+
+        std::string NET_EOD;
     protected:
         bool Error;
         int maxConnections;
@@ -35,7 +37,6 @@ namespace Xennet
         unsigned short int listenPort;
         socklen_t clientAddressLength;
         struct sockaddr_in clientAddress, serverAddress;
-        char line[DEFAULT_MAX_DATA_SIZE+1];
     };
 
 } // namespace Xennet

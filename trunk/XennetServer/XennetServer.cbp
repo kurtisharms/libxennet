@@ -31,7 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="/home/kurtis/Programming/Projects/Xennet/libXennet/src" />
 		</Compiler>
+		<Linker>
+			<Add library="Xennet" />
+			<Add directory="/home/kurtis/Programming/Projects/Xennet/libXennet" />
+		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
