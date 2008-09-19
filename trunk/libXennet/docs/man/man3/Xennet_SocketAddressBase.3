@@ -1,0 +1,80 @@
+.TH "Xennet::SocketAddressBase" 3 "19 Sep 2008" "Version 0.1.0" "Xennet C++ Network Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Xennet::SocketAddressBase \- \fBSocketAddressBase\fP is inherited by the OS-specific \fBSocketAddress\fP class.  
+
+.PP
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <xenSocketAddressBase.hpp>\fP
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSocketAddressBase\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~SocketAddressBase\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBsetIPAddress\fP (const char *cp)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBsetHostName\fP (const char *name)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBisAddressNull\fP (void)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual char * \fBgetAddressName\fP (void)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual char * \fBgetAddressIP\fP (void)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBSocketAddressBase\fP is inherited by the OS-specific \fBSocketAddress\fP class. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Xennet::SocketAddressBase::SocketAddressBase ()\fC [inline]\fP"
+.PP
+Default constructor 
+.SS "virtual Xennet::SocketAddressBase::~SocketAddressBase ()\fC [inline, virtual]\fP"
+.PP
+Default destructor 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool Xennet::SocketAddressBase::setIPAddress (const char * cp)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::SocketAddressBase::setHostName (const char * name)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::SocketAddressBase::isAddressNull (void)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual char* Xennet::SocketAddressBase::getAddressName (void)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual char* Xennet::SocketAddressBase::getAddressIP (void)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Xennet C++ Network Library from the source code.

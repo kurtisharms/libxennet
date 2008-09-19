@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.5">
+  <compounddef id="dir_433e2159b850d534fd2887a3695f1a70" kind="dir">
+    <compoundname>libXennet/src/linux/</compoundname>
+    <innerfile refid="xenPacket_8cpp">xenPacket.cpp</innerfile>
+    <innerfile refid="xenPacket_8h">xenPacket.h</innerfile>
+    <innerfile refid="xenServerSocket_8cpp">xenServerSocket.cpp</innerfile>
+    <innerfile refid="xenServerSocket_8hpp">xenServerSocket.hpp</innerfile>
+    <innerfile refid="xenSocket_8cpp">xenSocket.cpp</innerfile>
+    <innerfile refid="xenSocket_8hpp">xenSocket.hpp</innerfile>
+    <innerfile refid="xenSocketAddress_8cpp">xenSocketAddress.cpp</innerfile>
+    <innerfile refid="xenSocketAddress_8h">xenSocketAddress.h</innerfile>
+    <innerfile refid="xenSocketAddress_8hpp">xenSocketAddress.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/"/>
+  </compounddef>
+</doxygen>

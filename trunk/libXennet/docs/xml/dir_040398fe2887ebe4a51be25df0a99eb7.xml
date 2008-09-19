@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.5">
+  <compounddef id="dir_040398fe2887ebe4a51be25df0a99eb7" kind="dir">
+    <compoundname>libXennet/</compoundname>
+    <innerdir refid="dir_7854c9bdbd8835711348b5001e450c01">libXennet/src/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/"/>
+  </compounddef>
+</doxygen>

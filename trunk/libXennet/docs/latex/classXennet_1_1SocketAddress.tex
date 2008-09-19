@@ -1,0 +1,137 @@
+\hypertarget{classXennet_1_1SocketAddress}{
+\section{Xennet::SocketAddress Class Reference}
+\label{classXennet_1_1SocketAddress}\index{Xennet::SocketAddress@{Xennet::SocketAddress}}
+}
+{\tt \#include $<$xenSocketAddress.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classXennet_1_1SocketAddress_16e560d92d78862d8c0da3c64d35d079}{SocketAddress} ()
+\item 
+virtual \hyperlink{classXennet_1_1SocketAddress_2e9d46f52ab4472f59c71a4dff475cd8}{$\sim$SocketAddress} ()
+\item 
+bool \hyperlink{classXennet_1_1SocketAddress_f5ca7d803d46ad00be03c16f0d66205d}{setIPAddress} (const char $\ast$cp)
+\item 
+bool \hyperlink{classXennet_1_1SocketAddress_a2c1c5639ce81303df2107fae300e5b8}{setHostName} (const char $\ast$name)
+\item 
+bool \hyperlink{classXennet_1_1SocketAddress_9be0cad32d9c917cc5735f59e9320904}{isAddressNull} (void)
+\item 
+char $\ast$ \hyperlink{classXennet_1_1SocketAddress_70b2d7158d8519a09fcdd5b2fb83532a}{getAddressName} (void)
+\item 
+char $\ast$ \hyperlink{classXennet_1_1SocketAddress_8a45c39941f54d3135464a5ac4fa1416}{getAddressIP} (void)
+\item 
+hostent $\ast$ \hyperlink{classXennet_1_1SocketAddress_cccc2fb3b090de4d1f86b94c526c636b}{getAddressStruct} (void)
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+struct hostent $\ast$ \hyperlink{classXennet_1_1SocketAddress_065a63b0ddd2743979f60bed0228d4bc}{he}
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int \hyperlink{classXennet_1_1SocketAddress_f278e5c242778c1ffaac88fd303b8968}{i}
+\item 
+struct in\_\-addr $\ast$$\ast$ \hyperlink{classXennet_1_1SocketAddress_b72fd48ae36c1a0a8b77d6947e559ad5}{addr\_\-list}
+\item 
+struct in\_\-addr \hyperlink{classXennet_1_1SocketAddress_d52092d77a63d9c7a754741ebb1e79ac}{addr}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classXennet_1_1SocketAddress_16e560d92d78862d8c0da3c64d35d079}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!SocketAddress@{SocketAddress}}
+\index{SocketAddress@{SocketAddress}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Xennet::SocketAddress::SocketAddress ()}}
+\label{classXennet_1_1SocketAddress_16e560d92d78862d8c0da3c64d35d079}
+
+
+Default constructor \hypertarget{classXennet_1_1SocketAddress_2e9d46f52ab4472f59c71a4dff475cd8}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!$\sim$SocketAddress@{$\sim$SocketAddress}}
+\index{$\sim$SocketAddress@{$\sim$SocketAddress}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual Xennet::SocketAddress::$\sim$SocketAddress ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classXennet_1_1SocketAddress_2e9d46f52ab4472f59c71a4dff475cd8}
+
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classXennet_1_1SocketAddress_f5ca7d803d46ad00be03c16f0d66205d}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!setIPAddress@{setIPAddress}}
+\index{setIPAddress@{setIPAddress}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Xennet::SocketAddress::setIPAddress (const char $\ast$ {\em cp})}}
+\label{classXennet_1_1SocketAddress_f5ca7d803d46ad00be03c16f0d66205d}
+
+
+\hypertarget{classXennet_1_1SocketAddress_a2c1c5639ce81303df2107fae300e5b8}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!setHostName@{setHostName}}
+\index{setHostName@{setHostName}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Xennet::SocketAddress::setHostName (const char $\ast$ {\em name})}}
+\label{classXennet_1_1SocketAddress_a2c1c5639ce81303df2107fae300e5b8}
+
+
+\hypertarget{classXennet_1_1SocketAddress_9be0cad32d9c917cc5735f59e9320904}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!isAddressNull@{isAddressNull}}
+\index{isAddressNull@{isAddressNull}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Xennet::SocketAddress::isAddressNull (void)}}
+\label{classXennet_1_1SocketAddress_9be0cad32d9c917cc5735f59e9320904}
+
+
+\hypertarget{classXennet_1_1SocketAddress_70b2d7158d8519a09fcdd5b2fb83532a}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!getAddressName@{getAddressName}}
+\index{getAddressName@{getAddressName}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Xennet::SocketAddress::getAddressName (void)}}
+\label{classXennet_1_1SocketAddress_70b2d7158d8519a09fcdd5b2fb83532a}
+
+
+\hypertarget{classXennet_1_1SocketAddress_8a45c39941f54d3135464a5ac4fa1416}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!getAddressIP@{getAddressIP}}
+\index{getAddressIP@{getAddressIP}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Xennet::SocketAddress::getAddressIP (void)}}
+\label{classXennet_1_1SocketAddress_8a45c39941f54d3135464a5ac4fa1416}
+
+
+\hypertarget{classXennet_1_1SocketAddress_cccc2fb3b090de4d1f86b94c526c636b}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!getAddressStruct@{getAddressStruct}}
+\index{getAddressStruct@{getAddressStruct}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}hostent$\ast$ Xennet::SocketAddress::getAddressStruct (void)}}
+\label{classXennet_1_1SocketAddress_cccc2fb3b090de4d1f86b94c526c636b}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classXennet_1_1SocketAddress_065a63b0ddd2743979f60bed0228d4bc}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!he@{he}}
+\index{he@{he}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}struct hostent$\ast$ {\bf Xennet::SocketAddress::he}\hspace{0.3cm}{\tt  \mbox{[}read\mbox{]}}}}
+\label{classXennet_1_1SocketAddress_065a63b0ddd2743979f60bed0228d4bc}
+
+
+\hypertarget{classXennet_1_1SocketAddress_f278e5c242778c1ffaac88fd303b8968}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!i@{i}}
+\index{i@{i}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Xennet::SocketAddress::i}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classXennet_1_1SocketAddress_f278e5c242778c1ffaac88fd303b8968}
+
+
+\hypertarget{classXennet_1_1SocketAddress_b72fd48ae36c1a0a8b77d6947e559ad5}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!addr\_\-list@{addr\_\-list}}
+\index{addr\_\-list@{addr\_\-list}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}struct in\_\-addr$\ast$$\ast$ {\bf Xennet::SocketAddress::addr\_\-list}\hspace{0.3cm}{\tt  \mbox{[}read, private\mbox{]}}}}
+\label{classXennet_1_1SocketAddress_b72fd48ae36c1a0a8b77d6947e559ad5}
+
+
+\hypertarget{classXennet_1_1SocketAddress_d52092d77a63d9c7a754741ebb1e79ac}{
+\index{Xennet::SocketAddress@{Xennet::SocketAddress}!addr@{addr}}
+\index{addr@{addr}!Xennet::SocketAddress@{Xennet::SocketAddress}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}struct in\_\-addr {\bf Xennet::SocketAddress::addr}\hspace{0.3cm}{\tt  \mbox{[}read, private\mbox{]}}}}
+\label{classXennet_1_1SocketAddress_d52092d77a63d9c7a754741ebb1e79ac}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+libXennet/src/linux/\hyperlink{xenSocketAddress_8hpp}{xenSocketAddress.hpp}\end{CompactItemize}

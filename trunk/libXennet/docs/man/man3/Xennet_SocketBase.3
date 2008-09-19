@@ -1,0 +1,142 @@
+.TH "Xennet::SocketBase" 3 "19 Sep 2008" "Version 0.1.0" "Xennet C++ Network Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Xennet::SocketBase \- \fBSocketBase\fP is inherited by the OS-specific Socket class .  
+
+.PP
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <xenSocketBase.hpp>\fP
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSocketBase\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~SocketBase\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBsetMaxDataSize\fP (int maxSize)"
+.br
+.RI "\fISet Maximum Data size for transmission by \fBSocketBase\fP. \fP"
+.ti -1c
+.RI "virtual int \fBgetMaxDataSize\fP (void)"
+.br
+.RI "\fIGet Maximim Data size for transmission by \fBSocketBase\fP. \fP"
+.ti -1c
+.RI "virtual int \fBgetPort\fP (void)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBisError\fP (void)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBresetError\fP (void)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBconnectSocket\fP ()=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBcloseSocket\fP (void)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBsendData\fP (Packet *data)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBsendData\fP (std::string data)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual Packet * \fBreadData\fP ()=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual std::string \fBreadDataAsString\fP ()=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBmaxDataSize\fP"
+.br
+.RI "\fIProtected integer to hold the maximum allowable data size. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBSocketBase\fP is inherited by the OS-specific Socket class . 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Xennet::SocketBase::SocketBase ()"
+.PP
+Default constructor 
+.SS "Xennet::SocketBase::~SocketBase ()\fC [virtual]\fP"
+.PP
+Default destructor 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Xennet::SocketBase::setMaxDataSize (int maxSize)\fC [virtual]\fP"
+.PP
+Set Maximum Data size for transmission by \fBSocketBase\fP. 
+.PP
+.SS "int Xennet::SocketBase::getMaxDataSize (void)\fC [virtual]\fP"
+.PP
+Get Maximim Data size for transmission by \fBSocketBase\fP. 
+.PP
+.SS "virtual int Xennet::SocketBase::getPort (void)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::SocketBase::isError (void)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::SocketBase::resetError (void)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::SocketBase::connectSocket ()\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::SocketBase::closeSocket (void)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::SocketBase::sendData (Packet * data)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::SocketBase::sendData (std::string data)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual Packet* Xennet::SocketBase::readData ()\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual std::string Xennet::SocketBase::readDataAsString ()\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SH "Member Data Documentation"
+.PP 
+.SS "int \fBXennet::SocketBase::maxDataSize\fP\fC [protected]\fP"
+.PP
+Protected integer to hold the maximum allowable data size. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Xennet C++ Network Library from the source code.

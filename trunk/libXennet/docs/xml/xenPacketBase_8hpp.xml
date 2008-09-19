@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.5">
+  <compounddef id="xenPacketBase_8hpp" kind="file">
+    <compoundname>xenPacketBase.hpp</compoundname>
+    <includes refid="xenMain_8hpp" local="yes">xenMain.hpp</includes>
+    <includedby refid="Xennet_8hpp" local="yes">libXennet/src/Xennet.hpp</includedby>
+    <incdepgraph>
+      <node id="157">
+        <label>list</label>
+      </node>
+      <node id="150">
+        <label>libXennet/src/xenPacketBase.hpp</label>
+        <link refid="xenPacketBase.hpp"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>string</label>
+      </node>
+      <node id="153">
+        <label>fstream</label>
+      </node>
+      <node id="155">
+        <label>cstdio</label>
+      </node>
+      <node id="154">
+        <label>cstdlib</label>
+      </node>
+      <node id="152">
+        <label>iostream</label>
+      </node>
+      <node id="151">
+        <label>xenMain.hpp</label>
+        <link refid="xenMain_8hpp"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="158">
+        <label>libXennet/src/xenPacketBase.hpp</label>
+        <link refid="xenPacketBase.hpp"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>libXennet/src/Xennet.hpp</label>
+        <link refid="Xennet_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXennet_1_1PacketBase" prot="public">Xennet::PacketBase</innerclass>
+    <innernamespace refid="namespaceXennet">Xennet</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PACKETBASE_HPP</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PACKETBASE_HPP</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="xenMain_8hpp" kindref="compound">xenMain.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Xennet</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classXennet_1_1PacketBase" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classXennet_1_1PacketBase" kindref="compound">PacketBase</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classXennet_1_1PacketBase_1469d592ab4214407c83bb12e0a3b7fb5" kindref="member">PacketBase</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classXennet_1_1PacketBase_1469d592ab4214407c83bb12e0a3b7fb5" kindref="member">PacketBase</ref>(std::string<sp/>data)<sp/>{}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classXennet_1_1PacketBase_1469d592ab4214407c83bb12e0a3b7fb5" kindref="member">PacketBase</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data)<sp/>{}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1PacketBase_1d3fe1078f7de6c8c2b6fdb121bce870b" kindref="member">~PacketBase</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1PacketBase_1eb1c97c2b02b35899ab9ac23d034a619" kindref="member">setData</ref>(std::string<sp/>str)=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classXennet_1_1PacketBase_101c2e74a25df5fcf0e287c97b9a766c2" kindref="member">getData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1PacketBase_1eb1c97c2b02b35899ab9ac23d034a619" kindref="member">setData</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classXennet_1_1PacketBase_163902a287597beab0a918b0643b35dc6" kindref="member">getCharData</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classXennet_1_1PacketBase_1e9a2adcaac12840f617f23de231519d3" kindref="member">strBuffer</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Xennet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>PACKETBASE_HPP</highlight></codeline>
+    </programlisting>
+    <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp"/>
+  </compounddef>
+</doxygen>

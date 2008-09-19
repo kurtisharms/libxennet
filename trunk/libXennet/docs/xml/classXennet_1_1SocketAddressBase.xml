@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.5">
+  <compounddef id="classXennet_1_1SocketAddressBase" kind="class" prot="public">
+    <compoundname>Xennet::SocketAddressBase</compoundname>
+    <includes local="no">xenSocketAddressBase.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXennet_1_1SocketAddressBase_17c425dc33914559b83e0a30916aacd46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xennet::SocketAddressBase::SocketAddressBase</definition>
+        <argsstring>()</argsstring>
+        <name>SocketAddressBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp" line="17" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddressBase_197756e2c34324d84ed2f656e3f941fa1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Xennet::SocketAddressBase::~SocketAddressBase</definition>
+        <argsstring>()</argsstring>
+        <name>~SocketAddressBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp" line="19" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddressBase_1414d94208d01e7a3edefc1df75ac1e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xennet::SocketAddressBase::setIPAddress</definition>
+        <argsstring>(const char *cp)=0</argsstring>
+        <name>setIPAddress</name>
+        <param>
+          <type>const char *</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp" line="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddressBase_1d5b5f60871399f28a02aa8bdf6544e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xennet::SocketAddressBase::setHostName</definition>
+        <argsstring>(const char *name)=0</argsstring>
+        <name>setHostName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp" line="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddressBase_15d6eb8b8a0218b1bc59b63c16ad82423" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xennet::SocketAddressBase::isAddressNull</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>isAddressNull</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp" line="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddressBase_1400550b2dfd27fb8e5f098e83ca079cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>char *</type>
+        <definition>virtual char* Xennet::SocketAddressBase::getAddressName</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>getAddressName</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp" line="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddressBase_100ae0b9d74b1634167567fd79ba708d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>char *</type>
+        <definition>virtual char* Xennet::SocketAddressBase::getAddressIP</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>getAddressIP</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp" line="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXennet_1_1SocketAddressBase" kindref="compound">SocketAddressBase</ref> is inherited by the OS-specific <ref refid="classXennet_1_1SocketAddress" kindref="compound">SocketAddress</ref> class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp" line="14" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketAddressBase.hpp" bodystart="13" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classXennet_1_1SocketAddressBase_100ae0b9d74b1634167567fd79ba708d1" prot="public" virt="pure-virtual"><scope>Xennet::SocketAddressBase</scope><name>getAddressIP</name></member>
+      <member refid="classXennet_1_1SocketAddressBase_1400550b2dfd27fb8e5f098e83ca079cc" prot="public" virt="pure-virtual"><scope>Xennet::SocketAddressBase</scope><name>getAddressName</name></member>
+      <member refid="classXennet_1_1SocketAddressBase_15d6eb8b8a0218b1bc59b63c16ad82423" prot="public" virt="pure-virtual"><scope>Xennet::SocketAddressBase</scope><name>isAddressNull</name></member>
+      <member refid="classXennet_1_1SocketAddressBase_1d5b5f60871399f28a02aa8bdf6544e42" prot="public" virt="pure-virtual"><scope>Xennet::SocketAddressBase</scope><name>setHostName</name></member>
+      <member refid="classXennet_1_1SocketAddressBase_1414d94208d01e7a3edefc1df75ac1e42" prot="public" virt="pure-virtual"><scope>Xennet::SocketAddressBase</scope><name>setIPAddress</name></member>
+      <member refid="classXennet_1_1SocketAddressBase_17c425dc33914559b83e0a30916aacd46" prot="public" virt="non-virtual"><scope>Xennet::SocketAddressBase</scope><name>SocketAddressBase</name></member>
+      <member refid="classXennet_1_1SocketAddressBase_197756e2c34324d84ed2f656e3f941fa1" prot="public" virt="virtual"><scope>Xennet::SocketAddressBase</scope><name>~SocketAddressBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
