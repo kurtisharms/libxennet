@@ -1,0 +1,95 @@
+.TH "Xennet::SocketAddress" 3 "19 Sep 2008" "Version 0.1.0" "Xennet C++ Network Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Xennet::SocketAddress \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <xenSocketAddress.hpp>\fP
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSocketAddress\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~SocketAddress\fP ()"
+.br
+.ti -1c
+.RI "bool \fBsetIPAddress\fP (const char *cp)"
+.br
+.ti -1c
+.RI "bool \fBsetHostName\fP (const char *name)"
+.br
+.ti -1c
+.RI "bool \fBisAddressNull\fP (void)"
+.br
+.ti -1c
+.RI "char * \fBgetAddressName\fP (void)"
+.br
+.ti -1c
+.RI "char * \fBgetAddressIP\fP (void)"
+.br
+.ti -1c
+.RI "hostent * \fBgetAddressStruct\fP (void)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "struct hostent * \fBhe\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBi\fP"
+.br
+.ti -1c
+.RI "struct in_addr ** \fBaddr_list\fP"
+.br
+.ti -1c
+.RI "struct in_addr \fBaddr\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Xennet::SocketAddress::SocketAddress ()"
+.PP
+Default constructor 
+.SS "virtual Xennet::SocketAddress::~SocketAddress ()\fC [virtual]\fP"
+.PP
+Default destructor 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Xennet::SocketAddress::setIPAddress (const char * cp)"
+.PP
+.SS "bool Xennet::SocketAddress::setHostName (const char * name)"
+.PP
+.SS "bool Xennet::SocketAddress::isAddressNull (void)"
+.PP
+.SS "char* Xennet::SocketAddress::getAddressName (void)"
+.PP
+.SS "char* Xennet::SocketAddress::getAddressIP (void)"
+.PP
+.SS "hostent* Xennet::SocketAddress::getAddressStruct (void)"
+.PP
+.SH "Member Data Documentation"
+.PP 
+.SS "struct hostent* \fBXennet::SocketAddress::he\fP\fC [read]\fP"
+.PP
+.SS "int \fBXennet::SocketAddress::i\fP\fC [private]\fP"
+.PP
+.SS "struct in_addr** \fBXennet::SocketAddress::addr_list\fP\fC [read, private]\fP"
+.PP
+.SS "struct in_addr \fBXennet::SocketAddress::addr\fP\fC [read, private]\fP"
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Xennet C++ Network Library from the source code.

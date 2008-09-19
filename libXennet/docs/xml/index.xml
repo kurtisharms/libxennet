@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.5.5">
+  <compound refid="classXennet_1_1Info" kind="class"><name>Xennet::Info</name>
+    <member refid="classXennet_1_1Info_1f5528bca74d99b1b5ae7ca1c12be5ea6" kind="function"><name>Info</name></member>
+    <member refid="classXennet_1_1Info_19e8105b185d36f9474da4f1073aa86fb" kind="function"><name>~Info</name></member>
+    <member refid="classXennet_1_1Info_1180a53770171a6e9a799cce43fb29162" kind="function"><name>getVersion</name></member>
+    <member refid="classXennet_1_1Info_1b21e95c576ae048cd14918543b6cafc8" kind="function"><name>getDescription</name></member>
+    <member refid="classXennet_1_1Info_1f53b1dc1edc80f1068fa5fc59820333f" kind="function"><name>getCopyright</name></member>
+  </compound>
+  <compound refid="classXennet_1_1PacketBase" kind="class"><name>Xennet::PacketBase</name>
+    <member refid="classXennet_1_1PacketBase_1e9a2adcaac12840f617f23de231519d3" kind="variable"><name>strBuffer</name></member>
+    <member refid="classXennet_1_1PacketBase_1469d592ab4214407c83bb12e0a3b7fb5" kind="function"><name>PacketBase</name></member>
+    <member refid="classXennet_1_1PacketBase_12620be36e870d26091addfb1686687d1" kind="function"><name>PacketBase</name></member>
+    <member refid="classXennet_1_1PacketBase_17205e2e9af5f535c9395ce176dc6c0dd" kind="function"><name>PacketBase</name></member>
+    <member refid="classXennet_1_1PacketBase_1d3fe1078f7de6c8c2b6fdb121bce870b" kind="function"><name>~PacketBase</name></member>
+    <member refid="classXennet_1_1PacketBase_1eb1c97c2b02b35899ab9ac23d034a619" kind="function"><name>setData</name></member>
+    <member refid="classXennet_1_1PacketBase_101c2e74a25df5fcf0e287c97b9a766c2" kind="function"><name>getData</name></member>
+    <member refid="classXennet_1_1PacketBase_1c2108b4190c783012d9771fab0c6d856" kind="function"><name>setData</name></member>
+    <member refid="classXennet_1_1PacketBase_163902a287597beab0a918b0643b35dc6" kind="function"><name>getCharData</name></member>
+  </compound>
+  <compound refid="classXennet_1_1ServerSocketBase" kind="class"><name>Xennet::ServerSocketBase</name>
+    <member refid="classXennet_1_1ServerSocketBase_10d45d6d3353820921a31565c11410e69" kind="variable"><name>maxDataSize</name></member>
+    <member refid="classXennet_1_1ServerSocketBase_1496da42d5fa8ebb779033bc4e436693b" kind="function"><name>ServerSocketBase</name></member>
+    <member refid="classXennet_1_1ServerSocketBase_1c83e50e3708c65f0d578098798df0045" kind="function"><name>~ServerSocketBase</name></member>
+    <member refid="classXennet_1_1ServerSocketBase_1b7e2795ed9e29eca5a2192bb048fe2a7" kind="function"><name>setMaxDataSize</name></member>
+    <member refid="classXennet_1_1ServerSocketBase_16825c1738c87620724714dcc0962536c" kind="function"><name>getMaxDataSize</name></member>
+  </compound>
+  <compound refid="classXennet_1_1SocketAddress" kind="class"><name>Xennet::SocketAddress</name>
+    <member refid="classXennet_1_1SocketAddress_1065a63b0ddd2743979f60bed0228d4bc" kind="variable"><name>he</name></member>
+    <member refid="classXennet_1_1SocketAddress_1f278e5c242778c1ffaac88fd303b8968" kind="variable"><name>i</name></member>
+    <member refid="classXennet_1_1SocketAddress_1b72fd48ae36c1a0a8b77d6947e559ad5" kind="variable"><name>addr_list</name></member>
+    <member refid="classXennet_1_1SocketAddress_1d52092d77a63d9c7a754741ebb1e79ac" kind="variable"><name>addr</name></member>
+    <member refid="classXennet_1_1SocketAddress_116e560d92d78862d8c0da3c64d35d079" kind="function"><name>SocketAddress</name></member>
+    <member refid="classXennet_1_1SocketAddress_12e9d46f52ab4472f59c71a4dff475cd8" kind="function"><name>~SocketAddress</name></member>
+    <member refid="classXennet_1_1SocketAddress_1f5ca7d803d46ad00be03c16f0d66205d" kind="function"><name>setIPAddress</name></member>
+    <member refid="classXennet_1_1SocketAddress_1a2c1c5639ce81303df2107fae300e5b8" kind="function"><name>setHostName</name></member>
+    <member refid="classXennet_1_1SocketAddress_19be0cad32d9c917cc5735f59e9320904" kind="function"><name>isAddressNull</name></member>
+    <member refid="classXennet_1_1SocketAddress_170b2d7158d8519a09fcdd5b2fb83532a" kind="function"><name>getAddressName</name></member>
+    <member refid="classXennet_1_1SocketAddress_18a45c39941f54d3135464a5ac4fa1416" kind="function"><name>getAddressIP</name></member>
+    <member refid="classXennet_1_1SocketAddress_1cccc2fb3b090de4d1f86b94c526c636b" kind="function"><name>getAddressStruct</name></member>
+  </compound>
+  <compound refid="classXennet_1_1SocketAddressBase" kind="class"><name>Xennet::SocketAddressBase</name>
+    <member refid="classXennet_1_1SocketAddressBase_17c425dc33914559b83e0a30916aacd46" kind="function"><name>SocketAddressBase</name></member>
+    <member refid="classXennet_1_1SocketAddressBase_197756e2c34324d84ed2f656e3f941fa1" kind="function"><name>~SocketAddressBase</name></member>
+    <member refid="classXennet_1_1SocketAddressBase_1414d94208d01e7a3edefc1df75ac1e42" kind="function"><name>setIPAddress</name></member>
+    <member refid="classXennet_1_1SocketAddressBase_1d5b5f60871399f28a02aa8bdf6544e42" kind="function"><name>setHostName</name></member>
+    <member refid="classXennet_1_1SocketAddressBase_15d6eb8b8a0218b1bc59b63c16ad82423" kind="function"><name>isAddressNull</name></member>
+    <member refid="classXennet_1_1SocketAddressBase_1400550b2dfd27fb8e5f098e83ca079cc" kind="function"><name>getAddressName</name></member>
+    <member refid="classXennet_1_1SocketAddressBase_100ae0b9d74b1634167567fd79ba708d1" kind="function"><name>getAddressIP</name></member>
+  </compound>
+  <compound refid="classXennet_1_1SocketBase" kind="class"><name>Xennet::SocketBase</name>
+    <member refid="classXennet_1_1SocketBase_132530d6e56d4aff4696a76f9588b5f07" kind="variable"><name>maxDataSize</name></member>
+    <member refid="classXennet_1_1SocketBase_1de4341bc034247a1ef5620914613ebbc" kind="function"><name>SocketBase</name></member>
+    <member refid="classXennet_1_1SocketBase_17bd3b275e3e62943c9220e56b17e146a" kind="function"><name>~SocketBase</name></member>
+    <member refid="classXennet_1_1SocketBase_1cfa5e4a24d42a2f02a5426aa3658a24d" kind="function"><name>setMaxDataSize</name></member>
+    <member refid="classXennet_1_1SocketBase_1feee0b760a929f4cdde223713ef701db" kind="function"><name>getMaxDataSize</name></member>
+    <member refid="classXennet_1_1SocketBase_17828be0b543226b668458390a294bf0d" kind="function"><name>getPort</name></member>
+    <member refid="classXennet_1_1SocketBase_16639e3721fda60b5859f9c87c5a79d6a" kind="function"><name>isError</name></member>
+    <member refid="classXennet_1_1SocketBase_12516dbd6d571f60f61002fbe294989f9" kind="function"><name>resetError</name></member>
+    <member refid="classXennet_1_1SocketBase_1ac861f3d4a84f91e1e9532cdfdbfffdd" kind="function"><name>connectSocket</name></member>
+    <member refid="classXennet_1_1SocketBase_159a3d033e8257f08b8419fb57529c2a3" kind="function"><name>closeSocket</name></member>
+    <member refid="classXennet_1_1SocketBase_11ca81fd73ba913d610c486b346711592" kind="function"><name>sendData</name></member>
+    <member refid="classXennet_1_1SocketBase_11356c72d00e8a08013783a791c66f226" kind="function"><name>sendData</name></member>
+    <member refid="classXennet_1_1SocketBase_11c3b53d1262bc49ce8232d2b1851ff14" kind="function"><name>readData</name></member>
+    <member refid="classXennet_1_1SocketBase_19031aea2aaccf7623827847e6e991fc0" kind="function"><name>readDataAsString</name></member>
+  </compound>
+  <compound refid="namespaceXennet" kind="namespace"><name>Xennet</name>
+  </compound>
+  <compound refid="xenPacket_8cpp" kind="file"><name>xenPacket.cpp</name>
+  </compound>
+  <compound refid="xenPacket_8h" kind="file"><name>xenPacket.h</name>
+  </compound>
+  <compound refid="xenServerSocket_8cpp" kind="file"><name>xenServerSocket.cpp</name>
+  </compound>
+  <compound refid="xenServerSocket_8hpp" kind="file"><name>xenServerSocket.hpp</name>
+  </compound>
+  <compound refid="xenSocket_8cpp" kind="file"><name>xenSocket.cpp</name>
+  </compound>
+  <compound refid="xenSocket_8hpp" kind="file"><name>xenSocket.hpp</name>
+  </compound>
+  <compound refid="xenSocketAddress_8cpp" kind="file"><name>xenSocketAddress.cpp</name>
+  </compound>
+  <compound refid="xenSocketAddress_8h" kind="file"><name>xenSocketAddress.h</name>
+  </compound>
+  <compound refid="xenSocketAddress_8hpp" kind="file"><name>xenSocketAddress.hpp</name>
+  </compound>
+  <compound refid="xenInfo_8cpp" kind="file"><name>xenInfo.cpp</name>
+  </compound>
+  <compound refid="xenInfo_8hpp" kind="file"><name>xenInfo.hpp</name>
+  </compound>
+  <compound refid="xenMain_8hpp" kind="file"><name>xenMain.hpp</name>
+    <member refid="xenMain_8hpp_1f9dec98aa8a1c745935a43b59119f30e" kind="define"><name>XENNET_LIB_VERSION</name></member>
+    <member refid="xenMain_8hpp_14f94e93fb0eab3282f5e6c80ae51d964" kind="define"><name>DEFAULT_MAX_DATA_SIZE</name></member>
+  </compound>
+  <compound refid="Xennet_8hpp" kind="file"><name>Xennet.hpp</name>
+  </compound>
+  <compound refid="xenPacketBase_8hpp" kind="file"><name>xenPacketBase.hpp</name>
+  </compound>
+  <compound refid="xenServerSocketBase_8cpp" kind="file"><name>xenServerSocketBase.cpp</name>
+  </compound>
+  <compound refid="xenServerSocketBase_8hpp" kind="file"><name>xenServerSocketBase.hpp</name>
+  </compound>
+  <compound refid="xenSocketAddressBase_8hpp" kind="file"><name>xenSocketAddressBase.hpp</name>
+  </compound>
+  <compound refid="xenSocketBase_8cpp" kind="file"><name>xenSocketBase.cpp</name>
+  </compound>
+  <compound refid="xenSocketBase_8hpp" kind="file"><name>xenSocketBase.hpp</name>
+  </compound>
+  <compound refid="dir_040398fe2887ebe4a51be25df0a99eb7" kind="dir"><name>libXennet/</name>
+  </compound>
+  <compound refid="dir_433e2159b850d534fd2887a3695f1a70" kind="dir"><name>libXennet/src/linux/</name>
+  </compound>
+  <compound refid="dir_7854c9bdbd8835711348b5001e450c01" kind="dir"><name>libXennet/src/</name>
+  </compound>
+</doxygenindex>

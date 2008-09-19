@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.5">
+  <compounddef id="classXennet_1_1SocketAddress" kind="class" prot="public">
+    <compoundname>Xennet::SocketAddress</compoundname>
+    <includes local="no">xenSocketAddress.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classXennet_1_1SocketAddress_1065a63b0ddd2743979f60bed0228d4bc" prot="public" static="no" mutable="no">
+        <type>struct hostent *</type>
+        <definition>struct hostent* Xennet::SocketAddress::he</definition>
+        <argsstring></argsstring>
+        <name>he</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="17" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXennet_1_1SocketAddress_1f278e5c242778c1ffaac88fd303b8968" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Xennet::SocketAddress::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="27" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXennet_1_1SocketAddress_1b72fd48ae36c1a0a8b77d6947e559ad5" prot="private" static="no" mutable="no">
+        <type>struct in_addr **</type>
+        <definition>struct in_addr** Xennet::SocketAddress::addr_list</definition>
+        <argsstring></argsstring>
+        <name>addr_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="28" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXennet_1_1SocketAddress_1d52092d77a63d9c7a754741ebb1e79ac" prot="private" static="no" mutable="no">
+        <type>struct in_addr</type>
+        <definition>struct in_addr Xennet::SocketAddress::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="29" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXennet_1_1SocketAddress_116e560d92d78862d8c0da3c64d35d079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xennet::SocketAddress::SocketAddress</definition>
+        <argsstring>()</argsstring>
+        <name>SocketAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddress_12e9d46f52ab4472f59c71a4dff475cd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xennet::SocketAddress::~SocketAddress</definition>
+        <argsstring>()</argsstring>
+        <name>~SocketAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddress_1f5ca7d803d46ad00be03c16f0d66205d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xennet::SocketAddress::setIPAddress</definition>
+        <argsstring>(const char *cp)</argsstring>
+        <name>setIPAddress</name>
+        <param>
+          <type>const char *</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddress_1a2c1c5639ce81303df2107fae300e5b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xennet::SocketAddress::setHostName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setHostName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddress_19be0cad32d9c917cc5735f59e9320904" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xennet::SocketAddress::isAddressNull</definition>
+        <argsstring>(void)</argsstring>
+        <name>isAddressNull</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddress_170b2d7158d8519a09fcdd5b2fb83532a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* Xennet::SocketAddress::getAddressName</definition>
+        <argsstring>(void)</argsstring>
+        <name>getAddressName</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddress_18a45c39941f54d3135464a5ac4fa1416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* Xennet::SocketAddress::getAddressIP</definition>
+        <argsstring>(void)</argsstring>
+        <name>getAddressIP</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketAddress_1cccc2fb3b090de4d1f86b94c526c636b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hostent *</type>
+        <definition>hostent* Xennet::SocketAddress::getAddressStruct</definition>
+        <argsstring>(void)</argsstring>
+        <name>getAddressStruct</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="10" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" bodystart="9" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classXennet_1_1SocketAddress_1d52092d77a63d9c7a754741ebb1e79ac" prot="private" virt="non-virtual"><scope>Xennet::SocketAddress</scope><name>addr</name></member>
+      <member refid="classXennet_1_1SocketAddress_1b72fd48ae36c1a0a8b77d6947e559ad5" prot="private" virt="non-virtual"><scope>Xennet::SocketAddress</scope><name>addr_list</name></member>
+      <member refid="classXennet_1_1SocketAddress_18a45c39941f54d3135464a5ac4fa1416" prot="public" virt="non-virtual"><scope>Xennet::SocketAddress</scope><name>getAddressIP</name></member>
+      <member refid="classXennet_1_1SocketAddress_170b2d7158d8519a09fcdd5b2fb83532a" prot="public" virt="non-virtual"><scope>Xennet::SocketAddress</scope><name>getAddressName</name></member>
+      <member refid="classXennet_1_1SocketAddress_1cccc2fb3b090de4d1f86b94c526c636b" prot="public" virt="non-virtual"><scope>Xennet::SocketAddress</scope><name>getAddressStruct</name></member>
+      <member refid="classXennet_1_1SocketAddress_1065a63b0ddd2743979f60bed0228d4bc" prot="public" virt="non-virtual"><scope>Xennet::SocketAddress</scope><name>he</name></member>
+      <member refid="classXennet_1_1SocketAddress_1f278e5c242778c1ffaac88fd303b8968" prot="private" virt="non-virtual"><scope>Xennet::SocketAddress</scope><name>i</name></member>
+      <member refid="classXennet_1_1SocketAddress_19be0cad32d9c917cc5735f59e9320904" prot="public" virt="non-virtual"><scope>Xennet::SocketAddress</scope><name>isAddressNull</name></member>
+      <member refid="classXennet_1_1SocketAddress_1a2c1c5639ce81303df2107fae300e5b8" prot="public" virt="non-virtual"><scope>Xennet::SocketAddress</scope><name>setHostName</name></member>
+      <member refid="classXennet_1_1SocketAddress_1f5ca7d803d46ad00be03c16f0d66205d" prot="public" virt="non-virtual"><scope>Xennet::SocketAddress</scope><name>setIPAddress</name></member>
+      <member refid="classXennet_1_1SocketAddress_116e560d92d78862d8c0da3c64d35d079" prot="public" virt="non-virtual"><scope>Xennet::SocketAddress</scope><name>SocketAddress</name></member>
+      <member refid="classXennet_1_1SocketAddress_12e9d46f52ab4472f59c71a4dff475cd8" prot="public" virt="virtual"><scope>Xennet::SocketAddress</scope><name>~SocketAddress</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

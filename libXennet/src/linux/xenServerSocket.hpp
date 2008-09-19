@@ -8,17 +8,32 @@
 #include "xenPacket.h"
 #include "../xenServerSocketBase.hpp"
 
+
+//! The Xennet namespace.
+/*!
+    The Xennet namespace contains all of the classes and functions in the library.
+*/
 namespace Xennet
 {
 
+//! ServerSocket class.
+/*!
+    The ServerSocket class provides a TCP-protocol server socket for dealing with clients.
+*/
     class ServerSocket : public ServerSocketBase
     {
     public:
-        /** Default constructor */
+        //! Basic default constructor.
         ServerSocket();
+        //! Recommended default constructor.
+        /*! \param port The port on which the server listens.
+            \param maxClients Specify the maximum allowable connections simutaneously for this ServerSocket
+            \return null
+        */
         ServerSocket(int port, int maxClients);
-        /** Default destructor */
+        //! Default destructor.
         virtual ~ServerSocket();
+
         int getPort(void);
         bool isError(void);
         bool resetError(void);

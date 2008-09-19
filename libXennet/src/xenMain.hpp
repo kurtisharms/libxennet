@@ -20,7 +20,9 @@
 #include <string>
 #include <list>
 
+//! Define XENNET_LIB_VERSION
 #define XENNET_LIB_VERSION "0.0.1"
+//! Define DEFAULT_MAX_DATA_SIZE
 #define DEFAULT_MAX_DATA_SIZE 1000
 
 #endif // XENMAIN_HPP_INCLUDED

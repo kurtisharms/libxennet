@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.5">
+  <compounddef id="classXennet_1_1SocketBase" kind="class" prot="public">
+    <compoundname>Xennet::SocketBase</compoundname>
+    <includes local="no">xenSocketBase.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classXennet_1_1SocketBase_132530d6e56d4aff4696a76f9588b5f07" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Xennet::SocketBase::maxDataSize</definition>
+        <argsstring></argsstring>
+        <name>maxDataSize</name>
+        <briefdescription>
+<para>Protected integer to hold the maximum allowable data size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="57" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXennet_1_1SocketBase_1de4341bc034247a1ef5620914613ebbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xennet::SocketBase::SocketBase</definition>
+        <argsstring>()</argsstring>
+        <name>SocketBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="29" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_17bd3b275e3e62943c9220e56b17e146a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Xennet::SocketBase::~SocketBase</definition>
+        <argsstring>()</argsstring>
+        <name>~SocketBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="31" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_1cfa5e4a24d42a2f02a5426aa3658a24d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Xennet::SocketBase::setMaxDataSize</definition>
+        <argsstring>(int maxSize)</argsstring>
+        <name>setMaxDataSize</name>
+        <param>
+          <type>int</type>
+          <declname>maxSize</declname>
+        </param>
+        <briefdescription>
+<para>Set Maximum Data size for transmission by <ref refid="classXennet_1_1SocketBase" kindref="compound">SocketBase</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="33" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_1feee0b760a929f4cdde223713ef701db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Xennet::SocketBase::getMaxDataSize</definition>
+        <argsstring>(void)</argsstring>
+        <name>getMaxDataSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Maximim Data size for transmission by <ref refid="classXennet_1_1SocketBase" kindref="compound">SocketBase</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="35" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_17828be0b543226b668458390a294bf0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Xennet::SocketBase::getPort</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>getPort</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_16639e3721fda60b5859f9c87c5a79d6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xennet::SocketBase::isError</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>isError</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_12516dbd6d571f60f61002fbe294989f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xennet::SocketBase::resetError</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>resetError</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_1ac861f3d4a84f91e1e9532cdfdbfffdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xennet::SocketBase::connectSocket</definition>
+        <argsstring>()=0</argsstring>
+        <name>connectSocket</name>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_159a3d033e8257f08b8419fb57529c2a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xennet::SocketBase::closeSocket</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>closeSocket</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_11ca81fd73ba913d610c486b346711592" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xennet::SocketBase::sendData</definition>
+        <argsstring>(Packet *data)=0</argsstring>
+        <name>sendData</name>
+        <param>
+          <type>Packet *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_11356c72d00e8a08013783a791c66f226" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xennet::SocketBase::sendData</definition>
+        <argsstring>(std::string data)=0</argsstring>
+        <name>sendData</name>
+        <param>
+          <type>std::string</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_11c3b53d1262bc49ce8232d2b1851ff14" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Packet *</type>
+        <definition>virtual Packet* Xennet::SocketBase::readData</definition>
+        <argsstring>()=0</argsstring>
+        <name>readData</name>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1SocketBase_19031aea2aaccf7623827847e6e991fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xennet::SocketBase::readDataAsString</definition>
+        <argsstring>()=0</argsstring>
+        <name>readDataAsString</name>
+        <briefdescription>
+<para>Pure virtual function to be overrided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXennet_1_1SocketBase" kindref="compound">SocketBase</ref> is inherited by the OS-specific Socket class . </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="26" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" bodystart="25" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classXennet_1_1SocketBase_159a3d033e8257f08b8419fb57529c2a3" prot="public" virt="pure-virtual"><scope>Xennet::SocketBase</scope><name>closeSocket</name></member>
+      <member refid="classXennet_1_1SocketBase_1ac861f3d4a84f91e1e9532cdfdbfffdd" prot="public" virt="pure-virtual"><scope>Xennet::SocketBase</scope><name>connectSocket</name></member>
+      <member refid="classXennet_1_1SocketBase_1feee0b760a929f4cdde223713ef701db" prot="public" virt="virtual"><scope>Xennet::SocketBase</scope><name>getMaxDataSize</name></member>
+      <member refid="classXennet_1_1SocketBase_17828be0b543226b668458390a294bf0d" prot="public" virt="pure-virtual"><scope>Xennet::SocketBase</scope><name>getPort</name></member>
+      <member refid="classXennet_1_1SocketBase_16639e3721fda60b5859f9c87c5a79d6a" prot="public" virt="pure-virtual"><scope>Xennet::SocketBase</scope><name>isError</name></member>
+      <member refid="classXennet_1_1SocketBase_132530d6e56d4aff4696a76f9588b5f07" prot="protected" virt="non-virtual"><scope>Xennet::SocketBase</scope><name>maxDataSize</name></member>
+      <member refid="classXennet_1_1SocketBase_11c3b53d1262bc49ce8232d2b1851ff14" prot="public" virt="pure-virtual"><scope>Xennet::SocketBase</scope><name>readData</name></member>
+      <member refid="classXennet_1_1SocketBase_19031aea2aaccf7623827847e6e991fc0" prot="public" virt="pure-virtual"><scope>Xennet::SocketBase</scope><name>readDataAsString</name></member>
+      <member refid="classXennet_1_1SocketBase_12516dbd6d571f60f61002fbe294989f9" prot="public" virt="pure-virtual"><scope>Xennet::SocketBase</scope><name>resetError</name></member>
+      <member refid="classXennet_1_1SocketBase_11ca81fd73ba913d610c486b346711592" prot="public" virt="pure-virtual"><scope>Xennet::SocketBase</scope><name>sendData</name></member>
+      <member refid="classXennet_1_1SocketBase_11356c72d00e8a08013783a791c66f226" prot="public" virt="pure-virtual"><scope>Xennet::SocketBase</scope><name>sendData</name></member>
+      <member refid="classXennet_1_1SocketBase_1cfa5e4a24d42a2f02a5426aa3658a24d" prot="public" virt="virtual"><scope>Xennet::SocketBase</scope><name>setMaxDataSize</name></member>
+      <member refid="classXennet_1_1SocketBase_1de4341bc034247a1ef5620914613ebbc" prot="public" virt="non-virtual"><scope>Xennet::SocketBase</scope><name>SocketBase</name></member>
+      <member refid="classXennet_1_1SocketBase_17bd3b275e3e62943c9220e56b17e146a" prot="public" virt="virtual"><scope>Xennet::SocketBase</scope><name>~SocketBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

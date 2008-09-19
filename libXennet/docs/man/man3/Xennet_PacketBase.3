@@ -1,0 +1,76 @@
+.TH "Xennet::PacketBase" 3 "19 Sep 2008" "Version 0.1.0" "Xennet C++ Network Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Xennet::PacketBase \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <xenPacketBase.hpp>\fP
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPacketBase\fP ()"
+.br
+.ti -1c
+.RI "\fBPacketBase\fP (std::string data)"
+.br
+.ti -1c
+.RI "\fBPacketBase\fP (char *data)"
+.br
+.ti -1c
+.RI "virtual \fB~PacketBase\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBsetData\fP (std::string str)=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBgetData\fP (void)=0"
+.br
+.ti -1c
+.RI "virtual bool \fBsetData\fP (char *data)=0"
+.br
+.ti -1c
+.RI "virtual char * \fBgetCharData\fP ()=0"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBstrBuffer\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Xennet::PacketBase::PacketBase ()\fC [inline]\fP"
+.PP
+Default constructor 
+.SS "Xennet::PacketBase::PacketBase (std::string data)\fC [inline]\fP"
+.PP
+.SS "Xennet::PacketBase::PacketBase (char * data)\fC [inline]\fP"
+.PP
+.SS "virtual Xennet::PacketBase::~PacketBase ()\fC [inline, virtual]\fP"
+.PP
+Default destructor 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool Xennet::PacketBase::setData (std::string str)\fC [pure virtual]\fP"
+.PP
+.SS "virtual std::string Xennet::PacketBase::getData (void)\fC [pure virtual]\fP"
+.PP
+.SS "virtual bool Xennet::PacketBase::setData (char * data)\fC [pure virtual]\fP"
+.PP
+.SS "virtual char* Xennet::PacketBase::getCharData ()\fC [pure virtual]\fP"
+.PP
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string \fBXennet::PacketBase::strBuffer\fP\fC [protected]\fP"
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Xennet C++ Network Library from the source code.

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.5">
+  <compounddef id="classXennet_1_1PacketBase" kind="class" prot="public">
+    <compoundname>Xennet::PacketBase</compoundname>
+    <includes local="no">xenPacketBase.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classXennet_1_1PacketBase_1e9a2adcaac12840f617f23de231519d3" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Xennet::PacketBase::strBuffer</definition>
+        <argsstring></argsstring>
+        <name>strBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" line="24" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXennet_1_1PacketBase_1469d592ab4214407c83bb12e0a3b7fb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xennet::PacketBase::PacketBase</definition>
+        <argsstring>()</argsstring>
+        <name>PacketBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" line="14" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1PacketBase_12620be36e870d26091addfb1686687d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xennet::PacketBase::PacketBase</definition>
+        <argsstring>(std::string data)</argsstring>
+        <name>PacketBase</name>
+        <param>
+          <type>std::string</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" line="15" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1PacketBase_17205e2e9af5f535c9395ce176dc6c0dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xennet::PacketBase::PacketBase</definition>
+        <argsstring>(char *data)</argsstring>
+        <name>PacketBase</name>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" line="16" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1PacketBase_1d3fe1078f7de6c8c2b6fdb121bce870b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Xennet::PacketBase::~PacketBase</definition>
+        <argsstring>()</argsstring>
+        <name>~PacketBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" line="18" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1PacketBase_1eb1c97c2b02b35899ab9ac23d034a619" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xennet::PacketBase::setData</definition>
+        <argsstring>(std::string str)=0</argsstring>
+        <name>setData</name>
+        <param>
+          <type>std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" line="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1PacketBase_101c2e74a25df5fcf0e287c97b9a766c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xennet::PacketBase::getData</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>getData</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" line="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1PacketBase_1c2108b4190c783012d9771fab0c6d856" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xennet::PacketBase::setData</definition>
+        <argsstring>(char *data)=0</argsstring>
+        <name>setData</name>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" line="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1PacketBase_163902a287597beab0a918b0643b35dc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>char *</type>
+        <definition>virtual char* Xennet::PacketBase::getCharData</definition>
+        <argsstring>()=0</argsstring>
+        <name>getCharData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" line="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" line="11" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp" bodystart="10" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classXennet_1_1PacketBase_163902a287597beab0a918b0643b35dc6" prot="public" virt="pure-virtual"><scope>Xennet::PacketBase</scope><name>getCharData</name></member>
+      <member refid="classXennet_1_1PacketBase_101c2e74a25df5fcf0e287c97b9a766c2" prot="public" virt="pure-virtual"><scope>Xennet::PacketBase</scope><name>getData</name></member>
+      <member refid="classXennet_1_1PacketBase_1469d592ab4214407c83bb12e0a3b7fb5" prot="public" virt="non-virtual"><scope>Xennet::PacketBase</scope><name>PacketBase</name></member>
+      <member refid="classXennet_1_1PacketBase_12620be36e870d26091addfb1686687d1" prot="public" virt="non-virtual"><scope>Xennet::PacketBase</scope><name>PacketBase</name></member>
+      <member refid="classXennet_1_1PacketBase_17205e2e9af5f535c9395ce176dc6c0dd" prot="public" virt="non-virtual"><scope>Xennet::PacketBase</scope><name>PacketBase</name></member>
+      <member refid="classXennet_1_1PacketBase_1eb1c97c2b02b35899ab9ac23d034a619" prot="public" virt="pure-virtual"><scope>Xennet::PacketBase</scope><name>setData</name></member>
+      <member refid="classXennet_1_1PacketBase_1c2108b4190c783012d9771fab0c6d856" prot="public" virt="pure-virtual"><scope>Xennet::PacketBase</scope><name>setData</name></member>
+      <member refid="classXennet_1_1PacketBase_1e9a2adcaac12840f617f23de231519d3" prot="protected" virt="non-virtual"><scope>Xennet::PacketBase</scope><name>strBuffer</name></member>
+      <member refid="classXennet_1_1PacketBase_1d3fe1078f7de6c8c2b6fdb121bce870b" prot="public" virt="virtual"><scope>Xennet::PacketBase</scope><name>~PacketBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

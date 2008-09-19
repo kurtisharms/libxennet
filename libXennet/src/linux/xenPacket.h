@@ -5,6 +5,10 @@
 
 #include "../xenPacketBase.hpp"
 
+//! The Xennet namespace.
+/*!
+    The Xennet namespace contains all of the classes and functions in the library.
+*/
 namespace Xennet
 {
 

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.5">
+  <compounddef id="namespaceXennet" kind="namespace">
+    <compoundname>Xennet</compoundname>
+    <innerclass refid="classXennet_1_1SocketAddress" prot="public">Xennet::SocketAddress</innerclass>
+    <innerclass refid="classXennet_1_1Info" prot="public">Xennet::Info</innerclass>
+    <innerclass refid="classXennet_1_1PacketBase" prot="public">Xennet::PacketBase</innerclass>
+    <innerclass refid="classXennet_1_1ServerSocketBase" prot="public">Xennet::ServerSocketBase</innerclass>
+    <innerclass refid="classXennet_1_1SocketAddressBase" prot="public">Xennet::SocketAddressBase</innerclass>
+    <innerclass refid="classXennet_1_1SocketBase" prot="public">Xennet::SocketBase</innerclass>
+    <briefdescription>
+<para>The <ref refid="namespaceXennet" kindref="compound">Xennet</ref> namespace. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="namespaceXennet" kindref="compound">Xennet</ref> namespace contains all of the classes and functions in the library. </para>    </detaileddescription>
+    <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocketAddress.hpp" line="7"/>
+  </compounddef>
+</doxygen>

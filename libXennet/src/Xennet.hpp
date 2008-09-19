@@ -1,3 +1,7 @@
+//! Xennet.hpp top-level header file
+/*!
+    Xennet.hpp references all of the header files in the Xennet C++ Network Library.
+*/
 #include "xenMain.hpp"
 
 #include "xenInfo.hpp"

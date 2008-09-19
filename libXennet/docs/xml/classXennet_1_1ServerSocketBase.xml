@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.5">
+  <compounddef id="classXennet_1_1ServerSocketBase" kind="class" prot="public">
+    <compoundname>Xennet::ServerSocketBase</compoundname>
+    <includes local="no">xenServerSocketBase.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classXennet_1_1ServerSocketBase_10d45d6d3353820921a31565c11410e69" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Xennet::ServerSocketBase::maxDataSize</definition>
+        <argsstring></argsstring>
+        <name>maxDataSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.hpp" line="31" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXennet_1_1ServerSocketBase_1496da42d5fa8ebb779033bc4e436693b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xennet::ServerSocketBase::ServerSocketBase</definition>
+        <argsstring>()</argsstring>
+        <name>ServerSocketBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.hpp" line="25" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1ServerSocketBase_1c83e50e3708c65f0d578098798df0045" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Xennet::ServerSocketBase::~ServerSocketBase</definition>
+        <argsstring>()</argsstring>
+        <name>~ServerSocketBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.hpp" line="27" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1ServerSocketBase_1b7e2795ed9e29eca5a2192bb048fe2a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Xennet::ServerSocketBase::setMaxDataSize</definition>
+        <argsstring>(int maxSize)</argsstring>
+        <name>setMaxDataSize</name>
+        <param>
+          <type>int</type>
+          <declname>maxSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.hpp" line="28" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classXennet_1_1ServerSocketBase_16825c1738c87620724714dcc0962536c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Xennet::ServerSocketBase::getMaxDataSize</definition>
+        <argsstring>(void)</argsstring>
+        <name>getMaxDataSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.hpp" line="29" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.hpp" line="22" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.hpp" bodystart="21" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classXennet_1_1ServerSocketBase_16825c1738c87620724714dcc0962536c" prot="public" virt="virtual"><scope>Xennet::ServerSocketBase</scope><name>getMaxDataSize</name></member>
+      <member refid="classXennet_1_1ServerSocketBase_10d45d6d3353820921a31565c11410e69" prot="protected" virt="non-virtual"><scope>Xennet::ServerSocketBase</scope><name>maxDataSize</name></member>
+      <member refid="classXennet_1_1ServerSocketBase_1496da42d5fa8ebb779033bc4e436693b" prot="public" virt="non-virtual"><scope>Xennet::ServerSocketBase</scope><name>ServerSocketBase</name></member>
+      <member refid="classXennet_1_1ServerSocketBase_1b7e2795ed9e29eca5a2192bb048fe2a7" prot="public" virt="virtual"><scope>Xennet::ServerSocketBase</scope><name>setMaxDataSize</name></member>
+      <member refid="classXennet_1_1ServerSocketBase_1c83e50e3708c65f0d578098798df0045" prot="public" virt="virtual"><scope>Xennet::ServerSocketBase</scope><name>~ServerSocketBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

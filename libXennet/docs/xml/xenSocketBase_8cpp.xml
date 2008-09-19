@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.5">
+  <compounddef id="xenSocketBase_8cpp" kind="file">
+    <compoundname>xenSocketBase.cpp</compoundname>
+    <includes refid="xenSocketBase_8hpp" local="yes">xenSocketBase.hpp</includes>
+    <incdepgraph>
+      <node id="199">
+        <label>list</label>
+      </node>
+      <node id="191">
+        <label>libXennet/src/xenSocketBase.cpp</label>
+        <link refid="xenSocketBase.cpp"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>string</label>
+      </node>
+      <node id="195">
+        <label>fstream</label>
+      </node>
+      <node id="197">
+        <label>cstdio</label>
+      </node>
+      <node id="196">
+        <label>cstdlib</label>
+      </node>
+      <node id="194">
+        <label>iostream</label>
+      </node>
+      <node id="192">
+        <label>xenSocketBase.hpp</label>
+        <link refid="xenSocketBase_8hpp"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>xenMain.hpp</label>
+        <link refid="xenMain_8hpp"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceXennet">Xennet</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="xenSocketBase_8hpp" kindref="compound">xenSocketBase.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Xennet</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classXennet_1_1SocketBase_1de4341bc034247a1ef5620914613ebbc" kindref="member">SocketBase::SocketBase</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setMaxDataSize(<ref refid="xenMain_8hpp_14f94e93fb0eab3282f5e6c80ae51d964" kindref="member" tooltip="Define DEFAULT_MAX_DATA_SIZE.">DEFAULT_MAX_DATA_SIZE</ref>);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>SocketBase::~SocketBase()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//dtor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1SocketBase_1cfa5e4a24d42a2f02a5426aa3658a24d" kindref="member" tooltip="Set Maximum Data size for transmission by SocketBase.">SocketBase::setMaxDataSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxSize)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxDataSize<sp/>=<sp/>maxSize;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1SocketBase_1feee0b760a929f4cdde223713ef701db" kindref="member" tooltip="Get Maximim Data size for transmission by SocketBase.">SocketBase::getMaxDataSize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>maxDataSize;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Xennet</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.cpp"/>
+  </compounddef>
+</doxygen>

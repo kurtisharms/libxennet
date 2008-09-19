@@ -1,0 +1,99 @@
+\hypertarget{classXennet_1_1SocketAddressBase}{
+\section{Xennet::SocketAddressBase Class Reference}
+\label{classXennet_1_1SocketAddressBase}\index{Xennet::SocketAddressBase@{Xennet::SocketAddressBase}}
+}
+\hyperlink{classXennet_1_1SocketAddressBase}{SocketAddressBase} is inherited by the OS-specific \hyperlink{classXennet_1_1SocketAddress}{SocketAddress} class.  
+
+
+{\tt \#include $<$xenSocketAddressBase.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classXennet_1_1SocketAddressBase_7c425dc33914559b83e0a30916aacd46}{SocketAddressBase} ()
+\item 
+virtual \hyperlink{classXennet_1_1SocketAddressBase_97756e2c34324d84ed2f656e3f941fa1}{$\sim$SocketAddressBase} ()
+\item 
+virtual bool \hyperlink{classXennet_1_1SocketAddressBase_414d94208d01e7a3edefc1df75ac1e42}{setIPAddress} (const char $\ast$cp)=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual bool \hyperlink{classXennet_1_1SocketAddressBase_d5b5f60871399f28a02aa8bdf6544e42}{setHostName} (const char $\ast$name)=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual bool \hyperlink{classXennet_1_1SocketAddressBase_5d6eb8b8a0218b1bc59b63c16ad82423}{isAddressNull} (void)=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual char $\ast$ \hyperlink{classXennet_1_1SocketAddressBase_400550b2dfd27fb8e5f098e83ca079cc}{getAddressName} (void)=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual char $\ast$ \hyperlink{classXennet_1_1SocketAddressBase_00ae0b9d74b1634167567fd79ba708d1}{getAddressIP} (void)=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classXennet_1_1SocketAddressBase}{SocketAddressBase} is inherited by the OS-specific \hyperlink{classXennet_1_1SocketAddress}{SocketAddress} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classXennet_1_1SocketAddressBase_7c425dc33914559b83e0a30916aacd46}{
+\index{Xennet::SocketAddressBase@{Xennet::SocketAddressBase}!SocketAddressBase@{SocketAddressBase}}
+\index{SocketAddressBase@{SocketAddressBase}!Xennet::SocketAddressBase@{Xennet::SocketAddressBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Xennet::SocketAddressBase::SocketAddressBase ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classXennet_1_1SocketAddressBase_7c425dc33914559b83e0a30916aacd46}
+
+
+Default constructor \hypertarget{classXennet_1_1SocketAddressBase_97756e2c34324d84ed2f656e3f941fa1}{
+\index{Xennet::SocketAddressBase@{Xennet::SocketAddressBase}!$\sim$SocketAddressBase@{$\sim$SocketAddressBase}}
+\index{$\sim$SocketAddressBase@{$\sim$SocketAddressBase}!Xennet::SocketAddressBase@{Xennet::SocketAddressBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual Xennet::SocketAddressBase::$\sim$SocketAddressBase ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classXennet_1_1SocketAddressBase_97756e2c34324d84ed2f656e3f941fa1}
+
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classXennet_1_1SocketAddressBase_414d94208d01e7a3edefc1df75ac1e42}{
+\index{Xennet::SocketAddressBase@{Xennet::SocketAddressBase}!setIPAddress@{setIPAddress}}
+\index{setIPAddress@{setIPAddress}!Xennet::SocketAddressBase@{Xennet::SocketAddressBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool Xennet::SocketAddressBase::setIPAddress (const char $\ast$ {\em cp})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1SocketAddressBase_414d94208d01e7a3edefc1df75ac1e42}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1SocketAddressBase_d5b5f60871399f28a02aa8bdf6544e42}{
+\index{Xennet::SocketAddressBase@{Xennet::SocketAddressBase}!setHostName@{setHostName}}
+\index{setHostName@{setHostName}!Xennet::SocketAddressBase@{Xennet::SocketAddressBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool Xennet::SocketAddressBase::setHostName (const char $\ast$ {\em name})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1SocketAddressBase_d5b5f60871399f28a02aa8bdf6544e42}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1SocketAddressBase_5d6eb8b8a0218b1bc59b63c16ad82423}{
+\index{Xennet::SocketAddressBase@{Xennet::SocketAddressBase}!isAddressNull@{isAddressNull}}
+\index{isAddressNull@{isAddressNull}!Xennet::SocketAddressBase@{Xennet::SocketAddressBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool Xennet::SocketAddressBase::isAddressNull (void)\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1SocketAddressBase_5d6eb8b8a0218b1bc59b63c16ad82423}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1SocketAddressBase_400550b2dfd27fb8e5f098e83ca079cc}{
+\index{Xennet::SocketAddressBase@{Xennet::SocketAddressBase}!getAddressName@{getAddressName}}
+\index{getAddressName@{getAddressName}!Xennet::SocketAddressBase@{Xennet::SocketAddressBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual char$\ast$ Xennet::SocketAddressBase::getAddressName (void)\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1SocketAddressBase_400550b2dfd27fb8e5f098e83ca079cc}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1SocketAddressBase_00ae0b9d74b1634167567fd79ba708d1}{
+\index{Xennet::SocketAddressBase@{Xennet::SocketAddressBase}!getAddressIP@{getAddressIP}}
+\index{getAddressIP@{getAddressIP}!Xennet::SocketAddressBase@{Xennet::SocketAddressBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual char$\ast$ Xennet::SocketAddressBase::getAddressIP (void)\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1SocketAddressBase_00ae0b9d74b1634167567fd79ba708d1}
+
+
+Pure virtual function to be overrided. 
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+libXennet/src/\hyperlink{xenSocketAddressBase_8hpp}{xenSocketAddressBase.hpp}\end{CompactItemize}
