@@ -11,25 +11,31 @@ int main()
     cin >> port;
     ServerSocket* ss = new ServerSocket(port,10);
     ago = ss->bindSocket();
-    if(!ago)
+    if (!ago)
     {
         cout << "Could not bind Server Socket! ABORTING!!!!!!" <<endl;
         abort();
     }
-    while(1) {
+    while (1)
+    {
         cout << "Waiting for TCP connection on port " << ss->getPort() <<endl;
         ago = ss->acceptConnections();
-        if(!ago)
+        if (!ago)
         {
             cout << "Could not create Server Socket! ABORTING!!!!!" <<endl;
             abort();
         }
-        Packet* pd = new Packet();
-        while (ss->receiveData(pd)) {
-            cout << pd->getData() <<endl;
-            pd->setData("Data Received at Server!");
-            ss->sendData(pd);
+        string data;
+        while (1)
+        {
+            data = ss->receiveDataAsString();
+            if (data == ss->NET_EOD)
+                break;
+            cout << data <<endl;
+            //cout << "Data line finished!" <<endl;
+            ss->sendData("Got DATA line!");
         }
+        ss->sendData("Connection closing!");
     }
     return 0;
 }

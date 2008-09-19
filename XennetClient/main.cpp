@@ -14,8 +14,6 @@ int main()
     Socket* sock = new Socket(port);
     sock->setIPAddress(host);
     sock->connectSocket();
-    //Packet* pa = new Packet("hi there");
-    //cout << pa->getData() <<endl;
     sock->sendData("hi there");
     cout << "From Server: " << sock->readDataAsString() <<endl;
     return 0;
