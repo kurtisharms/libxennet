@@ -16,10 +16,10 @@
 namespace Xennet
 {
 
-//! ServerSocket class.
-/*!
-    The ServerSocket class provides a TCP-protocol server socket for dealing with clients.
-*/
+    //! ServerSocket class.
+    /*!
+        The ServerSocket class provides a TCP-protocol server socket for dealing with clients.
+    */
     class ServerSocket : public ServerSocketBase
     {
     public:

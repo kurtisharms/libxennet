@@ -1,0 +1,142 @@
+.TH "Xennet::DatagramSocketBase" 3 "20 Sep 2008" "Version 0.1.0" "Xennet C++ Network Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Xennet::DatagramSocketBase \- \fBDatagramSocketBase\fP is inherited by the OS-specific DatagramSocket class.  
+
+.PP
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <xenDatagramSocketBase.hpp>\fP
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDatagramSocketBase\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~DatagramSocketBase\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBsetMaxDataSize\fP (int maxSize)"
+.br
+.RI "\fISet Maximum Data size for transmission by \fBSocketBase\fP. \fP"
+.ti -1c
+.RI "virtual int \fBgetMaxDataSize\fP (void)"
+.br
+.RI "\fIGet Maximim Data size for transmission by \fBSocketBase\fP. \fP"
+.ti -1c
+.RI "virtual int \fBgetPort\fP (void)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBisError\fP (void)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBresetError\fP (void)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBconnectSocket\fP ()=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBcloseSocket\fP (void)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBsendData\fP (Packet *data)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual bool \fBsendData\fP (std::string data)=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual Packet * \fBreadData\fP ()=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.ti -1c
+.RI "virtual std::string \fBreadDataAsString\fP ()=0"
+.br
+.RI "\fIPure virtual function to be overrided. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBmaxDataSize\fP"
+.br
+.RI "\fIProtected integer to hold the maximum allowable data size. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBDatagramSocketBase\fP is inherited by the OS-specific DatagramSocket class. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Xennet::DatagramSocketBase::DatagramSocketBase ()"
+.PP
+Default constructor 
+.SS "Xennet::DatagramSocketBase::~DatagramSocketBase ()\fC [virtual]\fP"
+.PP
+Default destructor 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Xennet::DatagramSocketBase::setMaxDataSize (int maxSize)\fC [virtual]\fP"
+.PP
+Set Maximum Data size for transmission by \fBSocketBase\fP. 
+.PP
+.SS "int Xennet::DatagramSocketBase::getMaxDataSize (void)\fC [virtual]\fP"
+.PP
+Get Maximim Data size for transmission by \fBSocketBase\fP. 
+.PP
+.SS "virtual int Xennet::DatagramSocketBase::getPort (void)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::DatagramSocketBase::isError (void)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::DatagramSocketBase::resetError (void)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::DatagramSocketBase::connectSocket ()\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::DatagramSocketBase::closeSocket (void)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::DatagramSocketBase::sendData (Packet * data)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual bool Xennet::DatagramSocketBase::sendData (std::string data)\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual Packet* Xennet::DatagramSocketBase::readData ()\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SS "virtual std::string Xennet::DatagramSocketBase::readDataAsString ()\fC [pure virtual]\fP"
+.PP
+Pure virtual function to be overrided. 
+.PP
+.SH "Member Data Documentation"
+.PP 
+.SS "int \fBXennet::DatagramSocketBase::maxDataSize\fP\fC [protected]\fP"
+.PP
+Protected integer to hold the maximum allowable data size. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Xennet C++ Network Library from the source code.

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.5">
+  <compounddef id="xenDatagramSocketBase_8hpp" kind="file">
+    <compoundname>xenDatagramSocketBase.hpp</compoundname>
+    <includes refid="xenMain_8hpp" local="yes">xenMain.hpp</includes>
+    <includedby refid="xenDatagramSocketBase_8cpp" local="yes">libXennet/src/xenDatagramSocketBase.cpp</includedby>
+    <incdepgraph>
+      <node id="106">
+        <label>list</label>
+      </node>
+      <node id="105">
+        <label>string</label>
+      </node>
+      <node id="102">
+        <label>fstream</label>
+      </node>
+      <node id="104">
+        <label>cstdio</label>
+      </node>
+      <node id="103">
+        <label>cstdlib</label>
+      </node>
+      <node id="101">
+        <label>iostream</label>
+      </node>
+      <node id="99">
+        <label>libXennet/src/xenDatagramSocketBase.hpp</label>
+        <link refid="xenDatagramSocketBase.hpp"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>xenMain.hpp</label>
+        <link refid="xenMain_8hpp"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="108">
+        <label>libXennet/src/xenDatagramSocketBase.cpp</label>
+        <link refid="xenDatagramSocketBase_8cpp"/>
+      </node>
+      <node id="107">
+        <label>libXennet/src/xenDatagramSocketBase.hpp</label>
+        <link refid="xenDatagramSocketBase.hpp"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXennet_1_1DatagramSocketBase" prot="public">Xennet::DatagramSocketBase</innerclass>
+    <innernamespace refid="namespaceXennet">Xennet</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DATAGRAMSOCKETBASE_HPP</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DATAGRAMSOCKETBASE_HPP</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="xenMain_8hpp" kindref="compound">xenMain.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"></codeline>
+<codeline lineno="11"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Xennet</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classXennet_1_1DatagramSocketBase" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classXennet_1_1DatagramSocketBase" kindref="compound" tooltip="DatagramSocketBase is inherited by the OS-specific DatagramSocket class.">DatagramSocketBase</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classXennet_1_1DatagramSocketBase_111b1321a39d3b80cc80197f34da75f1f" kindref="member">DatagramSocketBase</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1DatagramSocketBase_1b4a3902fd34b76a17452832a4d0e94a4" kindref="member">~DatagramSocketBase</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1DatagramSocketBase_1874f711e80bbfb068cada65f595cf67e" kindref="member" tooltip="Set Maximum Data size for transmission by SocketBase.">setMaxDataSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxSize);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1DatagramSocketBase_17034b0625b0b7f62cb93804594bad713" kindref="member" tooltip="Get Maximim Data size for transmission by SocketBase.">getMaxDataSize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1DatagramSocketBase_136fd9c4e4edc3d71df606ac8335150d1" kindref="member" tooltip="Pure virtual function to be overrided.">getPort</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1DatagramSocketBase_1b413bb0f043190aa4c00e3be12585510" kindref="member" tooltip="Pure virtual function to be overrided.">isError</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1DatagramSocketBase_126651029d023c6aa3f2bfb7c8846cef6" kindref="member" tooltip="Pure virtual function to be overrided.">resetError</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1DatagramSocketBase_14781f0e7666365da5d6f00ae54017e30" kindref="member" tooltip="Pure virtual function to be overrided.">connectSocket</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1DatagramSocketBase_1e149b661f5a880698d1a29d281c556ba" kindref="member" tooltip="Pure virtual function to be overrided.">closeSocket</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1DatagramSocketBase_19308e21ac58ded6b1e317fa8b112e97e" kindref="member" tooltip="Pure virtual function to be overrided.">sendData</ref>(Packet*<sp/>data)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1DatagramSocketBase_19308e21ac58ded6b1e317fa8b112e97e" kindref="member" tooltip="Pure virtual function to be overrided.">sendData</ref>(std::string<sp/>data)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Packet*<sp/><ref refid="classXennet_1_1DatagramSocketBase_198167a14039e4074f0de02f5c4f08446" kindref="member" tooltip="Pure virtual function to be overrided.">readData</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classXennet_1_1DatagramSocketBase_10363962c4e5316675de815ede59182bc" kindref="member" tooltip="Pure virtual function to be overrided.">readDataAsString</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classXennet_1_1DatagramSocketBase_1a5168c12db4203f683f0b0dbda6c61b5" kindref="member" tooltip="Protected integer to hold the maximum allowable data size.">maxDataSize</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Xennet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DATAGRAMSOCKETBASE_HPP</highlight></codeline>
+    </programlisting>
+    <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenDatagramSocketBase.hpp"/>
+  </compounddef>
+</doxygen>
