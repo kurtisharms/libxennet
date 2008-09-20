@@ -1,0 +1,183 @@
+\hypertarget{classXennet_1_1DatagramSocketBase}{
+\section{Xennet::DatagramSocketBase Class Reference}
+\label{classXennet_1_1DatagramSocketBase}\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+}
+\hyperlink{classXennet_1_1DatagramSocketBase}{DatagramSocketBase} is inherited by the OS-specific DatagramSocket class.  
+
+
+{\tt \#include $<$xenDatagramSocketBase.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classXennet_1_1DatagramSocketBase_11b1321a39d3b80cc80197f34da75f1f}{DatagramSocketBase} ()
+\item 
+virtual \hyperlink{classXennet_1_1DatagramSocketBase_b4a3902fd34b76a17452832a4d0e94a4}{$\sim$DatagramSocketBase} ()
+\item 
+virtual void \hyperlink{classXennet_1_1DatagramSocketBase_874f711e80bbfb068cada65f595cf67e}{setMaxDataSize} (int maxSize)
+\begin{CompactList}\small\item\em Set Maximum Data size for transmission by \hyperlink{classXennet_1_1SocketBase}{SocketBase}. \item\end{CompactList}\item 
+virtual int \hyperlink{classXennet_1_1DatagramSocketBase_7034b0625b0b7f62cb93804594bad713}{getMaxDataSize} (void)
+\begin{CompactList}\small\item\em Get Maximim Data size for transmission by \hyperlink{classXennet_1_1SocketBase}{SocketBase}. \item\end{CompactList}\item 
+virtual int \hyperlink{classXennet_1_1DatagramSocketBase_36fd9c4e4edc3d71df606ac8335150d1}{getPort} (void)=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual bool \hyperlink{classXennet_1_1DatagramSocketBase_b413bb0f043190aa4c00e3be12585510}{isError} (void)=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual bool \hyperlink{classXennet_1_1DatagramSocketBase_26651029d023c6aa3f2bfb7c8846cef6}{resetError} (void)=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual bool \hyperlink{classXennet_1_1DatagramSocketBase_4781f0e7666365da5d6f00ae54017e30}{connectSocket} ()=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual bool \hyperlink{classXennet_1_1DatagramSocketBase_e149b661f5a880698d1a29d281c556ba}{closeSocket} (void)=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual bool \hyperlink{classXennet_1_1DatagramSocketBase_9308e21ac58ded6b1e317fa8b112e97e}{sendData} (Packet $\ast$data)=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual bool \hyperlink{classXennet_1_1DatagramSocketBase_c84e1f2bd85653a0a425190254bb5d3d}{sendData} (std::string data)=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual Packet $\ast$ \hyperlink{classXennet_1_1DatagramSocketBase_98167a14039e4074f0de02f5c4f08446}{readData} ()=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\item 
+virtual std::string \hyperlink{classXennet_1_1DatagramSocketBase_0363962c4e5316675de815ede59182bc}{readDataAsString} ()=0
+\begin{CompactList}\small\item\em Pure virtual function to be overrided. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+int \hyperlink{classXennet_1_1DatagramSocketBase_a5168c12db4203f683f0b0dbda6c61b5}{maxDataSize}
+\begin{CompactList}\small\item\em Protected integer to hold the maximum allowable data size. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classXennet_1_1DatagramSocketBase}{DatagramSocketBase} is inherited by the OS-specific DatagramSocket class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classXennet_1_1DatagramSocketBase_11b1321a39d3b80cc80197f34da75f1f}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!DatagramSocketBase@{DatagramSocketBase}}
+\index{DatagramSocketBase@{DatagramSocketBase}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Xennet::DatagramSocketBase::DatagramSocketBase ()}}
+\label{classXennet_1_1DatagramSocketBase_11b1321a39d3b80cc80197f34da75f1f}
+
+
+Default constructor \hypertarget{classXennet_1_1DatagramSocketBase_b4a3902fd34b76a17452832a4d0e94a4}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!$\sim$DatagramSocketBase@{$\sim$DatagramSocketBase}}
+\index{$\sim$DatagramSocketBase@{$\sim$DatagramSocketBase}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Xennet::DatagramSocketBase::$\sim$DatagramSocketBase ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_b4a3902fd34b76a17452832a4d0e94a4}
+
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classXennet_1_1DatagramSocketBase_874f711e80bbfb068cada65f595cf67e}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!setMaxDataSize@{setMaxDataSize}}
+\index{setMaxDataSize@{setMaxDataSize}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Xennet::DatagramSocketBase::setMaxDataSize (int {\em maxSize})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_874f711e80bbfb068cada65f595cf67e}
+
+
+Set Maximum Data size for transmission by \hyperlink{classXennet_1_1SocketBase}{SocketBase}. 
+
+\hypertarget{classXennet_1_1DatagramSocketBase_7034b0625b0b7f62cb93804594bad713}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!getMaxDataSize@{getMaxDataSize}}
+\index{getMaxDataSize@{getMaxDataSize}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Xennet::DatagramSocketBase::getMaxDataSize (void)\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_7034b0625b0b7f62cb93804594bad713}
+
+
+Get Maximim Data size for transmission by \hyperlink{classXennet_1_1SocketBase}{SocketBase}. 
+
+\hypertarget{classXennet_1_1DatagramSocketBase_36fd9c4e4edc3d71df606ac8335150d1}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!getPort@{getPort}}
+\index{getPort@{getPort}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual int Xennet::DatagramSocketBase::getPort (void)\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_36fd9c4e4edc3d71df606ac8335150d1}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1DatagramSocketBase_b413bb0f043190aa4c00e3be12585510}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!isError@{isError}}
+\index{isError@{isError}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool Xennet::DatagramSocketBase::isError (void)\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_b413bb0f043190aa4c00e3be12585510}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1DatagramSocketBase_26651029d023c6aa3f2bfb7c8846cef6}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!resetError@{resetError}}
+\index{resetError@{resetError}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool Xennet::DatagramSocketBase::resetError (void)\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_26651029d023c6aa3f2bfb7c8846cef6}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1DatagramSocketBase_4781f0e7666365da5d6f00ae54017e30}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!connectSocket@{connectSocket}}
+\index{connectSocket@{connectSocket}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool Xennet::DatagramSocketBase::connectSocket ()\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_4781f0e7666365da5d6f00ae54017e30}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1DatagramSocketBase_e149b661f5a880698d1a29d281c556ba}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!closeSocket@{closeSocket}}
+\index{closeSocket@{closeSocket}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool Xennet::DatagramSocketBase::closeSocket (void)\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_e149b661f5a880698d1a29d281c556ba}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1DatagramSocketBase_9308e21ac58ded6b1e317fa8b112e97e}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!sendData@{sendData}}
+\index{sendData@{sendData}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool Xennet::DatagramSocketBase::sendData (Packet $\ast$ {\em data})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_9308e21ac58ded6b1e317fa8b112e97e}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1DatagramSocketBase_c84e1f2bd85653a0a425190254bb5d3d}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!sendData@{sendData}}
+\index{sendData@{sendData}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool Xennet::DatagramSocketBase::sendData (std::string {\em data})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_c84e1f2bd85653a0a425190254bb5d3d}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1DatagramSocketBase_98167a14039e4074f0de02f5c4f08446}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!readData@{readData}}
+\index{readData@{readData}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual Packet$\ast$ Xennet::DatagramSocketBase::readData ()\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_98167a14039e4074f0de02f5c4f08446}
+
+
+Pure virtual function to be overrided. 
+
+\hypertarget{classXennet_1_1DatagramSocketBase_0363962c4e5316675de815ede59182bc}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!readDataAsString@{readDataAsString}}
+\index{readDataAsString@{readDataAsString}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual std::string Xennet::DatagramSocketBase::readDataAsString ()\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_0363962c4e5316675de815ede59182bc}
+
+
+Pure virtual function to be overrided. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classXennet_1_1DatagramSocketBase_a5168c12db4203f683f0b0dbda6c61b5}{
+\index{Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}!maxDataSize@{maxDataSize}}
+\index{maxDataSize@{maxDataSize}!Xennet::DatagramSocketBase@{Xennet::DatagramSocketBase}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Xennet::DatagramSocketBase::maxDataSize}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classXennet_1_1DatagramSocketBase_a5168c12db4203f683f0b0dbda6c61b5}
+
+
+Protected integer to hold the maximum allowable data size. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+libXennet/src/\hyperlink{xenDatagramSocketBase_8hpp}{xenDatagramSocketBase.hpp}\item 
+libXennet/src/\hyperlink{xenDatagramSocketBase_8cpp}{xenDatagramSocketBase.cpp}\end{CompactItemize}

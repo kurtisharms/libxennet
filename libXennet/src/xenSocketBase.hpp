@@ -21,7 +21,7 @@
 */
 namespace Xennet
 {
-    //! SocketBase is inherited by the OS-specific Socket class .
+    //! SocketBase is inherited by the OS-specific Socket class.
     class SocketBase
     {
     public:
