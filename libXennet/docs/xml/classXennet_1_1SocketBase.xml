@@ -217,7 +217,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para><ref refid="classXennet_1_1SocketBase" kindref="compound">SocketBase</ref> is inherited by the OS-specific Socket class . </para>    </briefdescription>
+<para><ref refid="classXennet_1_1SocketBase" kindref="compound">SocketBase</ref> is inherited by the OS-specific Socket class. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <location file="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" line="26" bodyfile="/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp" bodystart="25" bodyend="59"/>

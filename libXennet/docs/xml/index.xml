@@ -1,5 +1,21 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.5.5">
+  <compound refid="classXennet_1_1DatagramSocketBase" kind="class"><name>Xennet::DatagramSocketBase</name>
+    <member refid="classXennet_1_1DatagramSocketBase_1a5168c12db4203f683f0b0dbda6c61b5" kind="variable"><name>maxDataSize</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_111b1321a39d3b80cc80197f34da75f1f" kind="function"><name>DatagramSocketBase</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_1b4a3902fd34b76a17452832a4d0e94a4" kind="function"><name>~DatagramSocketBase</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_1874f711e80bbfb068cada65f595cf67e" kind="function"><name>setMaxDataSize</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_17034b0625b0b7f62cb93804594bad713" kind="function"><name>getMaxDataSize</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_136fd9c4e4edc3d71df606ac8335150d1" kind="function"><name>getPort</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_1b413bb0f043190aa4c00e3be12585510" kind="function"><name>isError</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_126651029d023c6aa3f2bfb7c8846cef6" kind="function"><name>resetError</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_14781f0e7666365da5d6f00ae54017e30" kind="function"><name>connectSocket</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_1e149b661f5a880698d1a29d281c556ba" kind="function"><name>closeSocket</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_19308e21ac58ded6b1e317fa8b112e97e" kind="function"><name>sendData</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_1c84e1f2bd85653a0a425190254bb5d3d" kind="function"><name>sendData</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_198167a14039e4074f0de02f5c4f08446" kind="function"><name>readData</name></member>
+    <member refid="classXennet_1_1DatagramSocketBase_10363962c4e5316675de815ede59182bc" kind="function"><name>readDataAsString</name></member>
+  </compound>
   <compound refid="classXennet_1_1Info" kind="class"><name>Xennet::Info</name>
     <member refid="classXennet_1_1Info_1f5528bca74d99b1b5ae7ca1c12be5ea6" kind="function"><name>Info</name></member>
     <member refid="classXennet_1_1Info_19e8105b185d36f9474da4f1073aa86fb" kind="function"><name>~Info</name></member>
@@ -83,6 +99,10 @@
   <compound refid="xenSocketAddress_8h" kind="file"><name>xenSocketAddress.h</name>
   </compound>
   <compound refid="xenSocketAddress_8hpp" kind="file"><name>xenSocketAddress.hpp</name>
+  </compound>
+  <compound refid="xenDatagramSocketBase_8cpp" kind="file"><name>xenDatagramSocketBase.cpp</name>
+  </compound>
+  <compound refid="xenDatagramSocketBase_8hpp" kind="file"><name>xenDatagramSocketBase.hpp</name>
   </compound>
   <compound refid="xenInfo_8cpp" kind="file"><name>xenInfo.cpp</name>
   </compound>
