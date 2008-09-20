@@ -1,4 +1,4 @@
-.TH "Xennet" 3 "19 Sep 2008" "Version 0.1.0" "Xennet C++ Network Library" \" -*- nroff -*-
+.TH "Xennet" 3 "20 Sep 2008" "Version 0.1.0" "Xennet C++ Network Library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -14,6 +14,10 @@ Xennet \- The \fBXennet\fP namespace.
 .ti -1c
 .RI "class \fBSocketAddress\fP"
 .br
+.ti -1c
+.RI "class \fBDatagramSocketBase\fP"
+.br
+.RI "\fI\fBDatagramSocketBase\fP is inherited by the OS-specific DatagramSocket class. \fP"
 .ti -1c
 .RI "class \fBInfo\fP"
 .br
@@ -31,12 +35,14 @@ Xennet \- The \fBXennet\fP namespace.
 .ti -1c
 .RI "class \fBSocketBase\fP"
 .br
-.RI "\fI\fBSocketBase\fP is inherited by the OS-specific Socket class . \fP"
+.RI "\fI\fBSocketBase\fP is inherited by the OS-specific Socket class. \fP"
 .in -1c
 .SH "Detailed Description"
 .PP 
 The \fBXennet\fP namespace. 
 
+The \fBXennet\fP namespace contains all of the library classes and functions.
+.PP
 The \fBXennet\fP namespace contains all of the classes and functions in the library. 
 .SH "Author"
 .PP 

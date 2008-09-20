@@ -13,6 +13,7 @@
     <includedby refid="xenSocket_8hpp" local="yes">libXennet/src/linux/xenSocket.hpp</includedby>
     <includedby refid="xenSocketAddress_8h" local="yes">libXennet/src/linux/xenSocketAddress.h</includedby>
     <includedby refid="xenSocketAddress_8hpp" local="yes">libXennet/src/linux/xenSocketAddress.hpp</includedby>
+    <includedby refid="xenDatagramSocketBase_8hpp" local="yes">libXennet/src/xenDatagramSocketBase.hpp</includedby>
     <includedby refid="xenInfo_8hpp" local="yes">libXennet/src/xenInfo.hpp</includedby>
     <includedby refid="Xennet_8hpp" local="yes">libXennet/src/Xennet.hpp</includedby>
     <includedby refid="xenPacketBase_8hpp" local="yes">libXennet/src/xenPacketBase.hpp</includedby>
@@ -20,161 +21,173 @@
     <includedby refid="xenSocketBase_8hpp" local="yes">libXennet/src/xenSocketBase.hpp</includedby>
     <includedby refid="xenServerSocketBase_8hpp" local="yes">libXennet/src/xenServerSocketBase.hpp</includedby>
     <incdepgraph>
-      <node id="116">
+      <node id="136">
         <label>list</label>
       </node>
-      <node id="115">
+      <node id="135">
         <label>string</label>
       </node>
-      <node id="112">
+      <node id="132">
         <label>fstream</label>
       </node>
-      <node id="114">
+      <node id="134">
         <label>cstdio</label>
       </node>
-      <node id="113">
+      <node id="133">
         <label>cstdlib</label>
       </node>
-      <node id="111">
+      <node id="131">
         <label>iostream</label>
       </node>
-      <node id="110">
-        <label>libXennet/src/xenMain.hpp</label>
-        <link refid="xenMain.hpp"/>
-        <childnode refid="111" relation="include">
-        </childnode>
-        <childnode refid="112" relation="include">
-        </childnode>
-        <childnode refid="113" relation="include">
-        </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="116" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
       <node id="130">
-        <label>libXennet/src/xenPacketBase.hpp</label>
-        <link refid="xenPacketBase_8hpp"/>
-        <childnode refid="129" relation="include">
-        </childnode>
-      </node>
-      <node id="135">
-        <label>libXennet/src/xenServerSocketBase.cpp</label>
-        <link refid="xenServerSocketBase_8cpp"/>
-      </node>
-      <node id="118">
-        <label>libXennet/src/linux/xenPacket.h</label>
-        <link refid="xenPacket_8h"/>
-        <childnode refid="119" relation="include">
-        </childnode>
-      </node>
-      <node id="133">
-        <label>libXennet/src/xenSocketBase.cpp</label>
-        <link refid="xenSocketBase_8cpp"/>
-      </node>
-      <node id="120">
-        <label>libXennet/src/linux/xenServerSocket.hpp</label>
-        <link refid="xenServerSocket_8hpp"/>
-        <childnode refid="121" relation="include">
-        </childnode>
-      </node>
-      <node id="134">
-        <label>libXennet/src/xenServerSocketBase.hpp</label>
-        <link refid="xenServerSocketBase_8hpp"/>
-        <childnode refid="129" relation="include">
-        </childnode>
-        <childnode refid="135" relation="include">
-        </childnode>
-      </node>
-      <node id="119">
-        <label>libXennet/src/linux/xenPacket.cpp</label>
-        <link refid="xenPacket_8cpp"/>
-      </node>
-      <node id="121">
-        <label>libXennet/src/linux/xenServerSocket.cpp</label>
-        <link refid="xenServerSocket_8cpp"/>
-      </node>
-      <node id="122">
-        <label>libXennet/src/linux/xenSocket.hpp</label>
-        <link refid="xenSocket_8hpp"/>
-        <childnode refid="123" relation="include">
-        </childnode>
-      </node>
-      <node id="128">
-        <label>libXennet/src/xenInfo.cpp</label>
-        <link refid="xenInfo_8cpp"/>
-      </node>
-      <node id="125">
-        <label>libXennet/src/linux/xenSocketAddress.cpp</label>
-        <link refid="xenSocketAddress_8cpp"/>
-      </node>
-      <node id="124">
-        <label>libXennet/src/linux/xenSocketAddress.h</label>
-        <link refid="xenSocketAddress_8h"/>
-        <childnode refid="125" relation="include">
-        </childnode>
-      </node>
-      <node id="123">
-        <label>libXennet/src/linux/xenSocket.cpp</label>
-        <link refid="xenSocket_8cpp"/>
-      </node>
-      <node id="127">
-        <label>libXennet/src/xenInfo.hpp</label>
-        <link refid="xenInfo_8hpp"/>
-        <childnode refid="128" relation="include">
-        </childnode>
-        <childnode refid="129" relation="include">
-        </childnode>
-      </node>
-      <node id="126">
-        <label>libXennet/src/linux/xenSocketAddress.hpp</label>
-        <link refid="xenSocketAddress_8hpp"/>
-      </node>
-      <node id="131">
-        <label>libXennet/src/xenSocketAddressBase.hpp</label>
-        <link refid="xenSocketAddressBase_8hpp"/>
-        <childnode refid="129" relation="include">
-        </childnode>
-      </node>
-      <node id="132">
-        <label>libXennet/src/xenSocketBase.hpp</label>
-        <link refid="xenSocketBase_8hpp"/>
-        <childnode refid="129" relation="include">
-        </childnode>
-        <childnode refid="133" relation="include">
-        </childnode>
-      </node>
-      <node id="117">
         <label>libXennet/src/xenMain.hpp</label>
         <link refid="xenMain.hpp"/>
-        <childnode refid="118" relation="include">
-        </childnode>
-        <childnode refid="120" relation="include">
-        </childnode>
-        <childnode refid="122" relation="include">
-        </childnode>
-        <childnode refid="124" relation="include">
-        </childnode>
-        <childnode refid="126" relation="include">
-        </childnode>
-        <childnode refid="127" relation="include">
-        </childnode>
-        <childnode refid="129" relation="include">
-        </childnode>
-        <childnode refid="130" relation="include">
-        </childnode>
         <childnode refid="131" relation="include">
         </childnode>
         <childnode refid="132" relation="include">
         </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
         <childnode refid="134" relation="include">
         </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
       </node>
-      <node id="129">
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="152">
+        <label>libXennet/src/xenPacketBase.hpp</label>
+        <link refid="xenPacketBase_8hpp"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>libXennet/src/xenDatagramSocketBase.cpp</label>
+        <link refid="xenDatagramSocketBase_8cpp"/>
+      </node>
+      <node id="157">
+        <label>libXennet/src/xenServerSocketBase.cpp</label>
+        <link refid="xenServerSocketBase_8cpp"/>
+      </node>
+      <node id="138">
+        <label>libXennet/src/linux/xenPacket.h</label>
+        <link refid="xenPacket_8h"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>libXennet/src/xenSocketBase.cpp</label>
+        <link refid="xenSocketBase_8cpp"/>
+      </node>
+      <node id="140">
+        <label>libXennet/src/linux/xenServerSocket.hpp</label>
+        <link refid="xenServerSocket_8hpp"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>libXennet/src/xenServerSocketBase.hpp</label>
+        <link refid="xenServerSocketBase_8hpp"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>libXennet/src/linux/xenPacket.cpp</label>
+        <link refid="xenPacket_8cpp"/>
+      </node>
+      <node id="141">
+        <label>libXennet/src/linux/xenServerSocket.cpp</label>
+        <link refid="xenServerSocket_8cpp"/>
+      </node>
+      <node id="142">
+        <label>libXennet/src/linux/xenSocket.hpp</label>
+        <link refid="xenSocket_8hpp"/>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>libXennet/src/xenInfo.cpp</label>
+        <link refid="xenInfo_8cpp"/>
+      </node>
+      <node id="145">
+        <label>libXennet/src/linux/xenSocketAddress.cpp</label>
+        <link refid="xenSocketAddress_8cpp"/>
+      </node>
+      <node id="147">
+        <label>libXennet/src/xenDatagramSocketBase.hpp</label>
+        <link refid="xenDatagramSocketBase_8hpp"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>libXennet/src/linux/xenSocketAddress.h</label>
+        <link refid="xenSocketAddress_8h"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>libXennet/src/linux/xenSocket.cpp</label>
+        <link refid="xenSocket_8cpp"/>
+      </node>
+      <node id="149">
+        <label>libXennet/src/xenInfo.hpp</label>
+        <link refid="xenInfo_8hpp"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>libXennet/src/linux/xenSocketAddress.hpp</label>
+        <link refid="xenSocketAddress_8hpp"/>
+      </node>
+      <node id="153">
+        <label>libXennet/src/xenSocketAddressBase.hpp</label>
+        <link refid="xenSocketAddressBase_8hpp"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>libXennet/src/xenSocketBase.hpp</label>
+        <link refid="xenSocketBase_8hpp"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>libXennet/src/xenMain.hpp</label>
+        <link refid="xenMain.hpp"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
         <label>libXennet/src/Xennet.hpp</label>
         <link refid="Xennet_8hpp"/>
       </node>

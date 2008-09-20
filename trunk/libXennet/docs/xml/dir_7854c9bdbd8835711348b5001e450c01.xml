@@ -3,6 +3,8 @@
   <compounddef id="dir_7854c9bdbd8835711348b5001e450c01" kind="dir">
     <compoundname>libXennet/src/</compoundname>
     <innerdir refid="dir_433e2159b850d534fd2887a3695f1a70">libXennet/src/linux/</innerdir>
+    <innerfile refid="xenDatagramSocketBase_8cpp">xenDatagramSocketBase.cpp</innerfile>
+    <innerfile refid="xenDatagramSocketBase_8hpp">xenDatagramSocketBase.hpp</innerfile>
     <innerfile refid="xenInfo_8cpp">xenInfo.cpp</innerfile>
     <innerfile refid="xenInfo_8hpp">xenInfo.hpp</innerfile>
     <innerfile refid="xenMain_8hpp">xenMain.hpp</innerfile>
