@@ -40,11 +40,10 @@ namespace Xennet
         bool bindSocket(void);
         bool acceptConnections(void);
         Packet* receiveData(void);
-        std::string receiveDataAsString(void);
+        bool receiveDataAsString(std::string& strBuffer);
         bool sendData(Packet* data);
         bool sendData(std::string data);
 
-        std::string NET_EOD;
     protected:
         bool Error;
         int maxConnections;

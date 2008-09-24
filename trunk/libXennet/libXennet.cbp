@@ -43,6 +43,8 @@
 		<Unit filename="src/linux/xenSocket.hpp" />
 		<Unit filename="src/linux/xenSocketAddress.cpp" />
 		<Unit filename="src/linux/xenSocketAddress.h" />
+		<Unit filename="src/xenDatagramSocketBase.cpp" />
+		<Unit filename="src/xenDatagramSocketBase.hpp" />
 		<Unit filename="src/xenInfo.cpp" />
 		<Unit filename="src/xenInfo.hpp" />
 		<Unit filename="src/xenMain.hpp" />
