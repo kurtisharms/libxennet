@@ -13,8 +13,8 @@
 	<File name="src/linux/xenServerSocket.cpp" open="0" top="0" tabpos="2">
 		<Cursor position="2212" topLine="0" />
 	</File>
-	<File name="src/linux/xenServerSocket.hpp" open="0" top="0" tabpos="1">
-		<Cursor position="939" topLine="3" />
+	<File name="src/linux/xenServerSocket.hpp" open="1" top="0" tabpos="3">
+		<Cursor position="323" topLine="9" />
 	</File>
 	<File name="src/linux/xenSocket.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="3451" topLine="116" />
@@ -38,10 +38,10 @@
 		<Cursor position="440" topLine="9" />
 	</File>
 	<File name="src/xenPacketBase.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="71" topLine="0" />
+		<Cursor position="582" topLine="11" />
 	</File>
 	<File name="src/xenServerSocketBase.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="256" topLine="6" />
+		<Cursor position="36" topLine="0" />
 	</File>
 	<File name="src/xenServerSocketBase.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="0" topLine="3" />
@@ -50,9 +50,9 @@
 		<Cursor position="1042" topLine="1" />
 	</File>
 	<File name="src/xenSocketBase.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="196" topLine="6" />
+		<Cursor position="93" topLine="7" />
 	</File>
 	<File name="src/xenSocketBase.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="226" topLine="27" />
+		<Cursor position="424" topLine="12" />
 	</File>
 </CodeBlocks_layout_file>

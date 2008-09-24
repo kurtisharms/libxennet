@@ -7,13 +7,10 @@ namespace Xennet
 
     ServerSocket::ServerSocket()
     {
-        NET_EOD = "NET_EOD_SINGLE_1";
     }
 
     ServerSocket::ServerSocket(int port, int maxClients)
     {
-        NET_EOD = "NET_EOD_SINGLE_1";
-
         Error = false;
 
         if (port > 0)
@@ -95,21 +92,23 @@ namespace Xennet
         return 0;
     }
 
-    std::string ServerSocket::receiveDataAsString(void)
+    bool ServerSocket::receiveDataAsString(std::string& strBuffer)
     {
-        char charBuffer[getMaxDataSize()];
-        memset(charBuffer, 0x0, getMaxDataSize()+1);
+        const int MAX_MSG = getMaxDataSize();
+        const int LINE_ARRAY_SIZE = MAX_MSG+1;
+        char charBuffer[LINE_ARRAY_SIZE];
+        memset(charBuffer, 0x0, LINE_ARRAY_SIZE);
         std::cout << "Receive DATA" <<std::endl;
-        if (recv(connectSocket, charBuffer, strlen(charBuffer) + 1, 0) > 0)
+        if (recv(connectSocket, charBuffer, MAX_MSG, 0) > 0)
         {
-
-            std::string strData = charBuffer;
-            std::cout << "Returning with data set as: " << charBuffer <<std::endl;
-            return strData;
+            std::cout << "Got character data set as: " << charBuffer <<std::endl;
+            std::string strBuffer = charBuffer;
+            std::cout << "Returning with data set as: " << strBuffer <<std::endl;
+            return true;
         }
         else
         {
-            return NET_EOD;
+            return false;
         }
     }
 

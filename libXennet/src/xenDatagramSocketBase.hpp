@@ -3,6 +3,9 @@
 
 
 #include "xenMain.hpp"
+#ifdef LINUX_OS
+#include "linux/xenPacket.h"
+#endif // LINUX_OS
 
 //! The Xennet namespace.
 /*!

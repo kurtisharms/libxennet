@@ -26,11 +26,8 @@ int main()
             abort();
         }
         string data;
-        while (1)
+        while (ss->receiveDataAsString(data))
         {
-            data = ss->receiveDataAsString();
-            if (data == ss->NET_EOD)
-                break;
             cout << data <<endl;
             //cout << "Data line finished!" <<endl;
             ss->sendData("Got DATA line!");

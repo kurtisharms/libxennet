@@ -5,7 +5,7 @@ namespace Xennet
 
     ServerSocketBase::ServerSocketBase()
     {
-        //ctor
+        setMaxDataSize(DEFAULT_MAX_DATA_SIZE);
     }
 
     ServerSocketBase::~ServerSocketBase()
@@ -20,7 +20,10 @@ namespace Xennet
 
     int ServerSocketBase::getMaxDataSize(void)
     {
-        return maxDataSize;
+        if(maxDataSize < 1)
+            return DEFAULT_MAX_DATA_SIZE;
+        else
+            return maxDataSize;
     }
 
 } // namespace Xennet

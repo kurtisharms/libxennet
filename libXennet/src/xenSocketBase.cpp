@@ -20,7 +20,10 @@ namespace Xennet
 
     int SocketBase::getMaxDataSize(void)
     {
-        return maxDataSize;
+        if(maxDataSize < 1)
+            return DEFAULT_MAX_DATA_SIZE;
+        else
+            return maxDataSize;
     }
 
 } // namespace Xennet

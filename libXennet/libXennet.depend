@@ -5,7 +5,7 @@
 1221818990 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenInfo.hpp
 	"xenMain.hpp"
 
-1221818326 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenMain.hpp
+1222250795 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenMain.hpp
 	<netdb.h>
 	<arpa/inet.h>
 	<netinet/in.h>
@@ -37,10 +37,10 @@
 1221818755 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp
 	"xenMain.hpp"
 
-1221213507 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.cpp
+1222251288 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.cpp
 	"xenSocketBase.hpp"
 
-1221818755 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp
+1221912296 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp
 	"xenMain.hpp"
 	"linux/xenPacket.h"
 	"win32/xenPacket.h"
@@ -55,7 +55,7 @@
 	"xenPacket.h"
 	"../xenSocketBase.hpp"
 
-1221470645 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.cpp
+1222251287 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.cpp
 	"xenServerSocketBase.hpp"
 
 1221470696 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.hpp
@@ -64,12 +64,19 @@
 	"win32/xenPacket.h"
 	"mac/xenPacket.h"
 
-1221815659 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenServerSocket.cpp
+1222251067 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenServerSocket.cpp
 	"xenServerSocket.hpp"
 
-1221817708 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenServerSocket.hpp
+1221912184 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenServerSocket.hpp
 	"../xenMain.hpp"
 	"xenSocketAddress.h"
 	"xenPacket.h"
 	"../xenServerSocketBase.hpp"
+
+1221912179 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenDatagramSocketBase.cpp
+	"xenDatagramSocketBase.hpp"
+
+1222250156 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenDatagramSocketBase.hpp
+	"xenMain.hpp"
+	"linux/xenPacket.h"
 
