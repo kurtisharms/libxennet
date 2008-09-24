@@ -1,11 +1,12 @@
-#ifndef XENSOCKET_HPP
-#define XENSOCKET_HPP
+#ifndef DATAGRAMSOCKET_HPP
+#define DATAGRAMSOCKET_HPP
+
 #include "../xenMain.hpp"
 #ifdef LINUX_OS
 
 #include "xenSocketAddress.h"
 #include "xenPacket.h"
-#include "../xenSocketBase.hpp"
+#include "../xenDatagramSocketBase.hpp"
 
 //! The Xennet namespace.
 /*!
@@ -14,16 +15,17 @@
 namespace Xennet
 {
 
-    class Socket : public SocketBase, public SocketAddress
+    class DatagramSocket : public DatagramSocketBase, public SocketAddress
     {
     public:
         /** Default constructor */
-        Socket(int port);
+        DatagramSocket(int port);
         /** Default destructor */
-        virtual ~Socket();
+        virtual ~DatagramSocket();
         int getPort(void);
         bool isError(void);
         bool resetError(void);
+        bool setTimeout(int seconds);
         bool connectSocket();
         bool closeSocket(void);
         bool sendData(Packet* data);
@@ -32,13 +34,19 @@ namespace Xennet
         std::string readDataAsString();
     protected:
         bool Error;
+        int numRead;
         unsigned short int serverPort;
         int socketDescriptor;
         struct sockaddr_in serverAddress;
+        struct timeval timeVal;
+        fd_set readSet;
         char c;
+        const int MAX_LINE;
+        const int LINE_ARRAY_SIZE;
+    private:
     };
 
 } // namespace Xennet
 
 #endif // LINUX_OS
-#endif // XENSOCKET_HPP
+#endif // DATAGRAMSOCKET_HPP
