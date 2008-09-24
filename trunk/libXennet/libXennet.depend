@@ -37,7 +37,7 @@
 1221818755 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenPacketBase.hpp
 	"xenMain.hpp"
 
-1222251288 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.cpp
+1222252829 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.cpp
 	"xenSocketBase.hpp"
 
 1221912296 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenSocketBase.hpp
@@ -46,16 +46,16 @@
 	"win32/xenPacket.h"
 	"mac/xenPacket.h"
 
-1221470645 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocket.cpp
+1222252985 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocket.cpp
 	"xenSocket.hpp"
 
-1221819373 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocket.hpp
+1222252985 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenSocket.hpp
 	"../xenMain.hpp"
 	"xenSocketAddress.h"
 	"xenPacket.h"
 	"../xenSocketBase.hpp"
 
-1222251287 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.cpp
+1222252829 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.cpp
 	"xenServerSocketBase.hpp"
 
 1221470696 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenServerSocketBase.hpp
@@ -64,10 +64,10 @@
 	"win32/xenPacket.h"
 	"mac/xenPacket.h"
 
-1222251067 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenServerSocket.cpp
+1222251997 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenServerSocket.cpp
 	"xenServerSocket.hpp"
 
-1221912184 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenServerSocket.hpp
+1222251949 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenServerSocket.hpp
 	"../xenMain.hpp"
 	"xenSocketAddress.h"
 	"xenPacket.h"
@@ -79,4 +79,13 @@
 1222250156 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenDatagramSocketBase.hpp
 	"xenMain.hpp"
 	"linux/xenPacket.h"
+
+1222252828 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenDatagramSocket.cpp
+	"xenDatagramSocket.hpp"
+
+1222253103 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenDatagramSocket.hpp
+	"../xenMain.hpp"
+	"xenSocketAddress.h"
+	"xenPacket.h"
+	"../xenDatagramSocketBase.hpp"
 

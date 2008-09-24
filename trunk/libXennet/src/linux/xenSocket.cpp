@@ -79,20 +79,6 @@ namespace Xennet
         return true;
     }
 
-    bool Socket::setCallBack(void (*func)(Packet*))
-    {
-        PassBack = func;
-        if (PassBack != NULL)
-        {
-            return true;
-        }
-        else
-        {
-            Error = true;
-            return false;
-        }
-    }
-
     bool Socket::sendData(Packet* data)
     {
         //std::cout << "In Socket::sendData(Packet* data)" <<std::endl;
