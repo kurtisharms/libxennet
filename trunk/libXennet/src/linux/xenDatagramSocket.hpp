@@ -41,8 +41,8 @@ namespace Xennet
         struct timeval timeVal;
         fd_set readSet;
         char c;
-        const int MAX_LINE;
-        const int LINE_ARRAY_SIZE;
+        int MAX_LINE;
+        int LINE_ARRAY_SIZE;
     private:
     };
 

@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="src/Xennet.hpp" open="0" top="0" tabpos="5">
-		<Cursor position="128" topLine="0" />
+	<File name="src/Xennet.hpp" open="1" top="0" tabpos="5">
+		<Cursor position="342" topLine="0" />
+	</File>
+	<File name="src/linux/xenDatagramSocket.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="3234" topLine="0" />
+	</File>
+	<File name="src/linux/xenDatagramSocket.hpp" open="1" top="0" tabpos="2">
+		<Cursor position="1138" topLine="33" />
 	</File>
 	<File name="src/linux/xenPacket.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="347" topLine="6" />
@@ -11,22 +17,25 @@
 		<Cursor position="231" topLine="0" />
 	</File>
 	<File name="src/linux/xenServerSocket.cpp" open="0" top="0" tabpos="2">
-		<Cursor position="2212" topLine="0" />
+		<Cursor position="30" topLine="0" />
 	</File>
-	<File name="src/linux/xenServerSocket.hpp" open="1" top="0" tabpos="3">
-		<Cursor position="323" topLine="9" />
+	<File name="src/linux/xenServerSocket.hpp" open="0" top="0" tabpos="3">
+		<Cursor position="184" topLine="25" />
 	</File>
-	<File name="src/linux/xenSocket.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="3451" topLine="116" />
+	<File name="src/linux/xenSocket.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="335" topLine="0" />
 	</File>
-	<File name="src/linux/xenSocket.hpp" open="0" top="0" tabpos="3">
-		<Cursor position="288" topLine="0" />
+	<File name="src/linux/xenSocket.hpp" open="1" top="0" tabpos="1">
+		<Cursor position="386" topLine="15" />
 	</File>
 	<File name="src/linux/xenSocketAddress.cpp" open="0" top="0" tabpos="1">
 		<Cursor position="1005" topLine="51" />
 	</File>
 	<File name="src/linux/xenSocketAddress.h" open="0" top="0" tabpos="2">
 		<Cursor position="272" topLine="0" />
+	</File>
+	<File name="src/xenDatagramSocketBase.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="150" topLine="0" />
 	</File>
 	<File name="src/xenInfo.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="548" topLine="0" />
@@ -35,22 +44,22 @@
 		<Cursor position="65" topLine="1" />
 	</File>
 	<File name="src/xenMain.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="440" topLine="9" />
+		<Cursor position="496" topLine="10" />
 	</File>
 	<File name="src/xenPacketBase.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="582" topLine="11" />
+		<Cursor position="582" topLine="0" />
 	</File>
 	<File name="src/xenServerSocketBase.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="36" topLine="0" />
+		<Cursor position="379" topLine="3" />
 	</File>
 	<File name="src/xenServerSocketBase.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="0" topLine="3" />
+		<Cursor position="0" topLine="12" />
 	</File>
 	<File name="src/xenSocketAddressBase.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="1042" topLine="1" />
+		<Cursor position="1042" topLine="13" />
 	</File>
 	<File name="src/xenSocketBase.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="93" topLine="7" />
+		<Cursor position="451" topLine="6" />
 	</File>
 	<File name="src/xenSocketBase.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="424" topLine="12" />
