@@ -10,6 +10,9 @@ namespace Xennet
         Error = false;
         MAX_LINE = getMaxDataSize();
         LINE_ARRAY_SIZE = MAX_LINE+3;
+        FD_ZERO(&readSet);
+        FD_SET(socketDescriptor, &readSet);
+        timeVal.tv_sec = 60;
 
         if (port > 0)
         {
@@ -54,6 +57,7 @@ namespace Xennet
         FD_ZERO(&readSet);
         FD_SET(socketDescriptor, &readSet);
         timeVal.tv_sec = seconds;
+        return true;
     }
 
     bool DatagramSocket::connectSocket()
@@ -110,13 +114,13 @@ namespace Xennet
                 return false;
             }
 
-            cout << "Modified: " << charBuffer << "\n";
+            std::cout << "Modified: " << charBuffer << "\n";
             std::string tmpStr = charBuffer;
             return tmpStr;
         }
         else
         {
-            cout << "** Server did not respond in 1 second.\n";
+            std::cout << "** Server did not respond within time limit.\n";
             return false;
         }
     }
