@@ -5,15 +5,15 @@ using namespace Xennet;
 
 int main()
 {
-    int tcpudp;
-    while (tcpudp != 1 && tcpudp != 2)
+    string tcpudp = "";
+    while (tcpudp != "1" && tcpudp != "2")
     {
         cout << "Choose:  1)TCP   2)UDP: ";
         cin >> tcpudp;
         cout << "\n\n";
     }
 
-    if (tcpudp == 1)
+    if (tcpudp == "1")
     {
         int port = 5000;
         string host;
@@ -28,7 +28,7 @@ int main()
         cout << "From Server: " << sock->readDataAsString() <<endl;
         return 0;
     }
-    else if (tcpudp == 2)
+    else if (tcpudp == "2")
     {
         int port = 5000;
         string host;

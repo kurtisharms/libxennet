@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="src/Xennet.hpp" open="1" top="0" tabpos="5">
+	<File name="src/Xennet.hpp" open="1" top="0" tabpos="4">
 		<Cursor position="342" topLine="0" />
 	</File>
 	<File name="src/linux/xenDatagramSocket.cpp" open="1" top="1" tabpos="3">
-		<Cursor position="3234" topLine="0" />
+		<Cursor position="3202" topLine="69" />
 	</File>
 	<File name="src/linux/xenDatagramSocket.hpp" open="1" top="0" tabpos="2">
 		<Cursor position="1138" topLine="33" />
