@@ -5,34 +5,54 @@ using namespace Xennet;
 
 int main()
 {
-    int port = 5000;
-    bool ago = true;
-    cout << "Enter the port number to listen on: ";
-    cin >> port;
-    ServerSocket* ss = new ServerSocket(port,10);
-    ago = ss->bindSocket();
-    if (!ago)
+    string tcpudp = "";
+    while (tcpudp != "1" && tcpudp != "2")
     {
-        cout << "Could not bind Server Socket! ABORTING!!!!!!" <<endl;
-        abort();
+        cout << "Choose:  1)TCP   2)UDP: ";
+        cin >> tcpudp;
+        cout << "\n\n";
     }
-    while (1)
+
+    if (tcpudp == "1")
     {
-        cout << "Waiting for TCP connection on port " << ss->getPort() <<endl;
-        ago = ss->acceptConnections();
+        int port = 5000;
+        bool ago = true;
+        cout << "Enter the port number to listen on: ";
+        cin >> port;
+        ServerSocket* ss = new ServerSocket(port,10);
+        ago = ss->bindSocket();
         if (!ago)
         {
-            cout << "Could not create Server Socket! ABORTING!!!!!" <<endl;
+            cout << "Could not bind Server Socket! ABORTING!!!!!!" <<endl;
             abort();
         }
-        string data;
-        while (ss->receiveDataAsString(data))
+        while (1)
         {
-            cout << data <<endl;
-            //cout << "Data line finished!" <<endl;
-            ss->sendData("Got DATA line!");
+            cout << "Waiting for TCP connection on port " << ss->getPort() <<endl;
+            ago = ss->acceptConnections();
+            if (!ago)
+            {
+                cout << "Could not create Server Socket! ABORTING!!!!!" <<endl;
+                abort();
+            }
+            string data;
+            while (ss->receiveDataAsString(data))
+            {
+                cout << data <<endl;
+                //cout << "Data line finished!" <<endl;
+                ss->sendData("Got DATA line!");
+            }
+            ss->sendData("Connection closing!");
         }
-        ss->sendData("Connection closing!");
+        return 0;
     }
+    else if (tcpudp == "2")
+    {
+        return 0;
+    }
+
+
+    // This should never be reached!
     return 0;
+
 }
