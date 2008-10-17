@@ -89,3 +89,21 @@
 	"xenPacket.h"
 	"../xenDatagramSocketBase.hpp"
 
+1224238037 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/xenDatagramServerSocketBase.cpp
+	"xenDatagramServerSocketBase.hpp"
+
+1224238037 /home/kurtis/Programming/Projects/Xennet/libXennet/src/xenDatagramServerSocketBase.hpp
+	"xenMain.hpp"
+	"linux/xenPacket.h"
+	"win32/xenPacket.h"
+	"mac/xenPacket.h"
+
+1224238418 source:/home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenDatagramServerSocket.cpp
+	"xenDatagramServerSocket.hpp"
+
+1224238418 /home/kurtis/Programming/Projects/Xennet/libXennet/src/linux/xenDatagramServerSocket.hpp
+	"../xenMain.hpp"
+	"xenSocketAddress.h"
+	"xenPacket.h"
+	"../xenDatagramServerSocketBase.hpp"
+

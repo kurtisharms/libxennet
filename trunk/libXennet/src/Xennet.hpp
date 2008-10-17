@@ -10,6 +10,7 @@
 #include "xenSocketBase.hpp"
 #include "xenServerSocketBase.hpp"
 #include "xenDatagramSocketBase.hpp"
+#include "xenDatagramServerSocketBase.hpp"
 
 #ifdef LINUX_OS
 #include "linux/xenPacket.h"
@@ -17,4 +18,5 @@
 #include "linux/xenSocketAddress.h"
 #include "linux/xenServerSocket.hpp"
 #include "linux/xenDatagramSocket.hpp"
+#include "linux/xenDatagramServerSocket.hpp"
 #endif // LINUX_OS

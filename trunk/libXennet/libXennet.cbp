@@ -35,6 +35,8 @@
 			</Target>
 		</Build>
 		<Unit filename="src/Xennet.hpp" />
+		<Unit filename="src/linux/xenDatagramServerSocket.cpp" />
+		<Unit filename="src/linux/xenDatagramServerSocket.hpp" />
 		<Unit filename="src/linux/xenDatagramSocket.cpp" />
 		<Unit filename="src/linux/xenDatagramSocket.hpp" />
 		<Unit filename="src/linux/xenPacket.cpp" />
@@ -45,6 +47,8 @@
 		<Unit filename="src/linux/xenSocket.hpp" />
 		<Unit filename="src/linux/xenSocketAddress.cpp" />
 		<Unit filename="src/linux/xenSocketAddress.h" />
+		<Unit filename="src/xenDatagramServerSocketBase.cpp" />
+		<Unit filename="src/xenDatagramServerSocketBase.hpp" />
 		<Unit filename="src/xenDatagramSocketBase.cpp" />
 		<Unit filename="src/xenDatagramSocketBase.hpp" />
 		<Unit filename="src/xenInfo.cpp" />

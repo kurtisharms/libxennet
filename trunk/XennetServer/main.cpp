@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Xennet.hpp"
 
 using namespace std;
@@ -48,6 +49,29 @@ int main()
     }
     else if (tcpudp == "2")
     {
+        int port = 5000;
+        bool ago = true;
+        cout << "Enter the port number to listen on: ";
+        cin >> port;
+        DatagramServerSocket* ss = new DatagramServerSocket(port,10);
+        ago = ss->bindSocket();
+        if (!ago)
+        {
+            cout << "Could not bind Server Socket! ABORTING!!!!!!" <<endl;
+            abort();
+        }
+        while (1)
+        {
+            cout << "Waiting for TCP connection on port " << ss->getPort() <<endl;
+            string data;
+            while (ss->receiveDataAsString(data))
+            {
+                cout << data <<endl;
+                //cout << "Data line finished!" <<endl;
+                ss->sendData("Got DATA line!");
+            }
+            ss->sendData("Connection closing!");
+        }
         return 0;
     }
 

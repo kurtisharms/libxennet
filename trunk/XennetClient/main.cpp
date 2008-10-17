@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Xennet.hpp"
 
 using namespace std;
